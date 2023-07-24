@@ -1,0 +1,1001 @@
+name1,name2,type,score,admin,links,unlinks
+twin room,"twin room, 2 twin beds",match,1963,1000,7,44
+queen room with two queen beds,2 queen beds non-smoking,match,1004,1000,10,6
+standard room with twin beds non refundable,twin room,match,999,1000,5,6
+double room,room 1 double bed non smoking fullbed*,match,997,1000,5,8
+"traditional room, 2 queen beds",queen room with two queen beds,match,995,1000,1,6
+double room,"standard double room, 1 queen bed",match,994,1000,6,12
+standard double or twin,double room,match,991,1000,2,11
+twin room,"habitación, 2 camas individuales",match,981,1000,7,26
+classic triple room,habitación triple clásica,match,968,1000,7,39
+grand suite,suite grand,match,957,1000,1,44
+standard double room (full double bed),double room,match,936,1000,87,151
+double standard (non-refundable),double room,match,13,0,86,73
+"habitación doble, no fumadores",double room,match,8,0,33,25
+double room,standard double/twin room,match,8,0,22,14
+double bed room,double room,match,8,0,16,8
+queen room with two queen beds,room 2 queen beds,match,6,0,29,23
+superior double room,double superior - non refunduble,match,6,0,16,10
+deluxe queen,deluxe room 1 queen bed,match,6,0,12,6
+double classic,classic room bb,match,5,0,15,10
+economy double or twin room,twin economy,match,5,0,14,9
+room + room,double standard,match,5,0,14,9
+double deluxe king,deluxe king room,match,5,0,12,7
+triple standard - non refunduble,triple room,match,4,0,34,30
+queen room with two queen beds,2 queen beds nonsmoking,match,4,0,19,15
+habitación superior (1 fullbed),habitación superior (1 fullbed) - package rate,match,4,0,10,6
+double or twin,classic double or twin room,match,4,0,10,6
+"deluxe room, 1 queen bed",deluxe double room,match,3,0,20,17
+double or twin sea view,sea view room,match,-6,0,15,21
+standard room pool view,double pool view,match,-6,0,6,12
+twin room,standard room.,match,-6,0,5,11
+habitacion doble (2 camas) - classic,habitacion doble (cama doble) - classic,match,-6,0,4,10
+twin room,standard room ( no breakfast ),match,-6,0,4,10
+standard room non-refundable,standard room - room only,match,-6,0,4,10
+"guest room, 2 queen","habitación, 2 camas de matrimonio, no fumadores",match,-6,0,4,10
+1 x double comfort special deal non refundable,double room,match,-6,0,2,8
+room ( none ),double room,match,-6,0,2,8
+superior double or twin room (1 queenbed),superior room,match,-6,0,2,8
+standard double room (full double bed) (king size bed),king size bed,match,-6,0,2,8
+double two double beds,classic two double,match,-6,0,1,7
+double room,deluxe ocean view,match,-6,0,1,7
+habitación doble - room only,twin room,match,-6,0,1,7
+double standard dbl,standard room,match,-6,0,1,7
+superior double room with sea view,superior double room with side sea view,match,-6,0,1,7
+premium queen room with bunk,premium queen room,match,-6,0,1,7
+classic double room - handicap accessible,classic queen room,match,-6,0,1,7
+"2 twin beds standard room, 2 twin beds, non smoking bed type can not be guaranteed","habitación estándar, 2 camas individuales, no fumadores",match,-6,0,1,7
+deluxe twin room,double or twin grand deluxe,match,-6,0,1,7
+queen room with two queen beds,queen room with two queen beds - non-refundable,match,-6,0,1,7
+select 2 queens,2 beds full size (2 pax),match,-6,0,1,7
+room economy,economy double room (double bed),match,-6,0,1,7
+penthouse three-bedroom suite,superior studio,match,-6,0,0,6
+habitación twin superior (2 individual(es) y 1 bebé(s) en camas existentes),suíte,match,-6,0,0,6
+habitación doble estándar (1 doble(s) or 2 individual(es)),habitaciã³n doble superior,match,-6,0,0,6
+double or twin deluxe - non refunduble,room superior,match,-6,0,0,6
+room,1 doble uso individual standard,match,-6,0,0,6
+habitación superior con vista al mar (2 doble(s)),habitaciã³n estã¡ndar con vista al jardã­n,match,-6,0,0,6
+superior double or twin room,double premium - non refunduble,match,-6,0,0,6
+classic room,classic single room (full double bed),match,-6,0,0,6
+classic single room (full double bed),double single use classic non refundable,match,-6,0,0,6
+double single use classic non refundable,classic single room (full double bed),match,-6,0,0,6
+superior room : accommodation only non refundable,superior room (extra bed 2 adults + 1 child) (3 twin beds/1 double bed and 1 twin bed) non refundable,match,-6,0,0,6
+sea view executive deluxe suite king size bed,sea view premier club room king bed,match,-6,0,0,6
+small only bed,"standard double (for 2 adults, 0 children and 0 infants)",match,-6,0,0,6
+1 x premium room,not refundable.1 x junior suite,match,-6,0,0,6
+classic twin room,classic room  double/twin bed,match,-6,0,0,6
+economy room  double/twin bed non refundable,base category room  double/twin bed non refundable,match,-6,0,0,6
+"room, 2 queen beds, accessible, 2 queen beds","room, 2 queen beds, city view, 2 queen beds",match,-6,0,0,6
+sky premium king with balcony,sky king with balcony,match,-6,0,0,6
+jumbo family room (2 adults+6 children),large family room (2 adults+4 children),match,-6,0,0,6
+standard room with 2 twin beds(breakfast english),standard room with 1 double bed and 1 single bed non refundable,match,-6,0,0,6
+"premium room (extra large), 1 queen bed","premium with views, 1 queen bed",match,-6,0,0,6
+standard room with 1 double bed and 1 single bed(breakfast english),single room,match,-6,0,0,6
+standard room 1pax,habitación doble,match,-6,0,0,6
+habitación con 2 camas individuales,single standard,match,-6,0,0,6
+habitación con 2 camas individuales,twin room on high floor with city view.,match,-6,0,0,6
+double room,classic double room bb,match,-6,0,0,6
+double room,double/twin-double or twin standard non refundable,match,-6,0,0,6
+double room,1 double bed non smoking non refundable,match,-6,0,0,6
+1 x double single use,double room,match,-6,0,0,6
+double room,mixed dormitory room,match,-6,0,0,6
+double (double bed) economy,double room,match,-6,0,0,6
+double room,studio two beds,match,-6,0,0,6
+double room,melia twin room,match,-6,0,0,6
+double room,double deluxe with balcony,match,-6,0,0,6
+double room - grand de luxe,double room,match,-6,0,0,6
+maisonette,double room,match,-6,0,0,6
+double room,executive single room,match,-6,0,0,6
+double room,"habitación básica doble, baño compartido",match,-6,0,0,6
+double room,"superior twin room, non smoking",match,-6,0,0,6
+double room,double room with domestic wings,match,-6,0,0,6
+double room,deluxe double room - non-refundable,match,-6,0,0,6
+single spacious double non refundable,double room,match,-6,0,0,6
+double room,deluxe premium room,match,-6,0,0,6
+studio with sofa bed,double room,match,-6,0,0,6
+"superior double room, 1 queen bed",double room,match,-6,0,0,6
+dorsett,double room,match,-6,0,0,6
+"habitación estándar, baño compartido",double room,match,-6,0,0,6
+double room - side sea view,double room,match,-6,0,0,6
+comfort double room - non-smoking,double room,match,-6,0,0,6
+single room,double standard non-refundable rate no amendments permitted,match,-6,0,0,6
+single room,double or twin prestige,match,-6,0,0,6
+standard double room multiple beds,single room,match,-6,0,0,6
+classic double or twin,single room,match,-6,0,0,6
+double superior - bed and breakfast,single room,match,-6,0,0,6
+single room,basic triple room with shared bathroom,match,-6,0,0,6
+twin room,double room - plus,match,-6,0,0,6
+single spacious double,twin room,match,-6,0,0,6
+twin room,spacious double room stay 2 nights and save,match,-6,0,0,6
+twin room,"standard double room, balcony",match,-6,0,0,6
+twin room,economy double room - non-refundable - breakfast included in the price,match,-6,0,0,6
+twin room,queen room - free cancellation - breakfast included in the price,match,-6,0,0,6
+twin room,standard room 1 queen bed queenbed,match,-6,0,0,6
+twin room,double sea,match,-6,0,0,6
+double sea,twin room,match,-6,0,0,6
+twin room,double room - room only. standard-room only-standard rate,match,-6,0,0,6
+double with double bed double,twin room,match,-6,0,0,6
+double room 1 queen bed,twin room,match,-6,0,0,6
+"room, 2 double or 2 queen beds",twin room,match,-6,0,0,6
+twin superior : room only non refundable,twin room,match,-6,0,0,6
+double room (1 adult + 1 child),twin room,match,-6,0,0,6
+twin room,duplex room,match,-6,0,0,6
+queen accessible guest rm (double),queen guest room (double),match,-6,0,0,6
+"deluxe room, 1 king bed, non smoking, 1 king bed","luxury room, 1 king bed, non smoking, 1 king bed",match,-6,0,0,6
+"royal suite with complimentary breakfast, signature afternoon tea, evening sundowners, soft refreshments and canapes",deluxe room,match,-6,0,0,6
+double standard,1 double bed mobility accessible room non-smoking,match,-6,0,0,6
+executive room + free wifi,double superior room + free wifi,match,-6,0,0,6
+single superior : breakfast includedcontinental non refundable,single superior non refundable : breakfast includedcontinental non refundable,match,-6,0,0,6
+single superior non refundable : breakfast includedcontinental non refundable,comfort room  1 king bed : free breakfast,match,-6,0,0,6
+comfort room  1 king bed : free breakfast,comfort room 1 king bed : room only,match,-6,0,0,6
+comfort room 1 king bed : room only,bardna - superior,match,-6,0,0,6
+comfort room kingbed,comfort room 1 king bed : room only,match,-6,0,0,6
+comfort room : room only,comfort room  1 king bed : free breakfast,match,-6,0,0,6
+comfort double room -  : room only,single comfort non refundable : breakfast includedcontinental non refundable,match,-6,0,0,6
+comfort double room -  : room only,double room - single use - comfort : breakfast includedcontinental non refundable,match,-6,0,0,6
+queen luxury,"deluxe dos camas, 2 double beds",match,-6,0,0,6
+non-smoking premium flamingo room with one king bed,"go suite, 1 king bed, non smoking",match,-6,0,0,6
+double colonial bb,suite modern ro,match,-6,0,0,6
+"duplex penthouse, 1 bedroom, balcony, ocean view, jetted tub","deluxe suite, 1 king bed with sofa bed, jetted tub, ocean view",match,-6,0,0,6
+single superior : breakfast includedcontinental non refundable,comfort room : breakfast for one,match,-6,0,0,6
+comfort room : breakfast for one,double room - single use - comfort : breakfast includedcontinental non refundable,match,-6,0,0,6
+double (flamingo room 2 queen beds strip view),double (go room 2 queen beds strip view),match,-6,0,0,6
+double (go room 2 queen beds strip view),double city view two queen beds,match,-6,0,0,6
+single superior nrf : breakfast includedcontinental non refundable,comfort room (1 king bed) : bed and breakfast non refundable,match,-6,0,0,6
+single comfort : bed and breakfast non refundable,single superior nrf : breakfast includedcontinental non refundable,match,-6,0,0,6
+single comfort : breakfast includedcontinental,single superior : breakfast includedcontinental,match,-6,0,0,6
+single : breakfast includedcontinental non refundable,comfort room (1 king bed) : bed and breakfast,match,-6,0,0,6
+comfort room () : room only,single : breakfast includedcontinental non refundable,match,-6,0,0,6
+single comfort : breakfast includedcontinental,single : breakfast includedcontinental non refundable,match,-6,0,0,6
+double room - single use - superior : breakfast includedcontinental non refundable,double comfort : breakfast includedcontinental non refundable,match,-6,0,0,6
+double room - single use - superior : breakfast includedcontinental non refundable,comfort room kingbed,match,-6,0,0,6
+comfort double room -  : room only,double room - single use - superior : breakfast includedcontinental non refundable,match,-6,0,0,6
+double room - single use - superior : breakfast includedcontinental non refundable,single superior : bed and breakfast,match,-6,0,0,6
+single comfort : breakfast includedcontinental non refundable,comfort room 1 king bed- non refundable : room only non refundable,match,-6,0,0,6
+double comfort : breakfast includedcontinental non refundable,comfort room 1 king bed- non refundable : room only non refundable,match,-6,0,0,6
+bardna - superior : room only,single superior nrf : breakfast includedcontinental non refundable,match,-6,0,0,6
+bardna - superior : room only,single standard non refundable : breakfast includedcontinental non refundable,match,-6,0,0,6
+single standard : breakfast includedcontinental,single comfort nrf : breakfast includedcontinental non refundable,match,-6,0,0,6
+bardna - superior,single standard : breakfast includedcontinental,match,-6,0,0,6
+double comfort : breakfast includedcontinental non refundable,single comfort nrf : breakfast includedcontinental non refundable,match,-6,0,0,6
+bardna - superior : room only,single comfort nrf : breakfast includedcontinental non refundable,match,-6,0,0,6
+comfort room  1 king bed : breakfast buffet non refundable,single comfort : breakfast includedcontinental,match,-6,0,0,6
+single superior : room only non refundable,single comfort : breakfast includedcontinental,match,-6,0,0,6
+single comfort nrf : breakfast includedcontinental non refundable,single comfort : breakfast includedcontinental,match,-6,0,0,6
+plus standard - non refunduble,single comfort non refundable : breakfast includedcontinental non refundable,match,-6,0,0,6
+bardna - comfort,comfort room 1 king bed- non refundable : buffet breakfast non refundable,match,-6,0,0,6
+bardna - comfort : room only,single superior non refundable : breakfast includedcontinental non refundable,match,-6,0,0,6
+comfort room 1 king bed- non refundable : buffet breakfast non refundable,comfort room (1 king bed) : bed and breakfast non refundable,match,-6,0,0,6
+comfort room  1 king bed : free breakfast,comfort room (1 king bed) : bed and breakfast non refundable,match,-6,0,0,6
+habitación doble (l),studio with balcony,match,-6,0,0,6
+medium urban twin,medium jungle,match,-6,0,0,6
+double or twin executive,executive single room non-refundable,match,-6,0,0,6
+triple deluxe sea view non refundable,deluxe double room with two double beds - sea view  - single occupancy,match,-6,0,0,6
+standard double room 1 king bed non refundable,standard double room 1 king bed,match,-6,0,0,6
+estandar ( no breakfast ),swim up room,match,-6,0,0,6
+classic sgl,classic only bed dus,match,-6,0,0,6
+superior room with aircondition (1 queenbed) - package rate,junior suite ( none ),match,-6,0,0,6
+premium room with aircondition (2 twinbed),junior suite with aircondition (2 twinbed),match,-6,0,0,6
+junior suite ( none ),premium room with aircondition (2 twinbed),match,-6,0,0,6
+premium room with aircondition (2 twinbed),junior suite - package rate ( breakfast ),match,-6,0,0,6
+studio 1 king bed non smoking,studio 1 king bed non smoking kingbed non refundable,match,-6,0,0,6
+nobu luxury king (dar1n),nobu luxury king (discnobu),match,-6,0,0,6
+standard double room ( half board ),superior dbl room ( breakfast ),match,-6,0,0,6
+premium room with aircondition (2 twinbed),junior suite - package rate ( breakfast ),match,-6,0,0,6
+standard room,superior room - single occupancy - non-refundable - breakfast included in the price,match,-6,0,0,6
+suíte júnior,suite superior con vista a la piscina (2 doble(s)),match,-6,0,0,6
+1 king studio suite non-smoking,queen suite - non-smoking - non-refundable - breakfast included in the price,match,-6,0,0,6
+queen suite - non-smoking - non-refundable - breakfast included in the price,"studio, 2 queen beds, accessible, non smoking (hearing)",match,-6,0,0,6
+single room - with breakfast,premium guestroom - package rate ( none ),match,-6,0,0,6
+premium guestroom - package rate ( none ),premium room with aircondition (2 twinbed),match,-6,0,0,6
+tryp guestroom - package rate ( breakfast ),single room - with breakfast,match,-6,0,0,6
+single room - with breakfast,premium guestroom - package rate ( breakfast ),match,-6,0,0,6
+premium guestroom - package rate ( breakfast ),superior room with aircondition (2 twinbed) - package rate,match,-6,0,0,6
+double/twin-ocean view 2 double beds...50usd rsrt chg - lanai-refrigerator...access to 4 pools- mp3 clock-lux linens,room  2 double beds  ocean view  2 fullbed non refundable,match,-6,0,0,6
+junior suite - package rate ( none ),premium room with aircondition (2 twinbed),match,-6,0,0,6
+"classic room, 1 king bed, 1 king bed","superior room, 1 king bed, 1 king bed",match,-6,0,0,6
+habitación innside premium non refundable,premium innside room non refundable,match,-6,0,0,6
+standard room,single standard room  1 queen bed,match,-6,0,0,6
+octavius premium room  1 king  non-smoking (dar1b),julius deluxe room  1 king  non-smoking (dar1b),match,-6,0,0,6
+"luxury room palm view twin, 2 single size beds, private balcony","habitación de lujo, 1 cama de matrimonio grande, balcón, vistas al mar",match,-6,0,0,6
+superior room (moderner jugendstil),double double superior moderner jugendstil,match,-6,0,0,6
+"suite, ensuite (2 adults + 2 children)",deluxe double room,match,-6,0,0,6
+"suite, ensuite (2 adults + 2 children)","comfort cottage, ensuite (cottage deluxe ensuite)",match,-6,0,0,6
+1 bedroom superior apartment,apartment (1 bedroom),match,-6,0,0,6
+studio confort 2 single beds,standard single studio,match,-6,0,0,6
+rainbow tower marina/ocean view 1 king bed,tapa collection partial ocean view 1 king bed...50usd resort charge - lanai-refrigerator...access to 4 pools - mp3 clock - lux linens,match,-6,0,0,6
+"room, 2 queen beds, ocean view (tapa coll)",alii partial ocean view 2 double beds..,match,-6,0,0,6
+alii ocean view 2 double beds...50usd r,"room, 2 queen beds, ocean view (tapa coll)",match,-6,0,0,6
+junior suite junior suite for single use black friday,surprise room double room non-refundable,match,-6,0,0,6
+2 queen beds studio nonsmoking...free brkfst/wi-fi-kitchen w/micro/fridge...spacious living room-hdtv-sofabed-work area non refundable,suite 1 bedroom non smoking non-refundable,match,-6,0,0,6
+"studio, 2 queen beds, accessible, non smoking (hearing)",2 queen beds studio nonsmoking...free brkfst/wi-fi-kitchen w/micro/fridge...spacious living room-hdtv-sofabed-work area non refundable,match,-6,0,0,6
+double room - new bedding,room with 2 single beds equipped with the new bedding,match,-6,0,0,6
+double or twin deluxe-lanna,double deluxe grand lanna,match,-6,0,0,6
+"espace room (k), larger guest room, 1 king, sofa bed","urban room, guest room, 1 king, sofa bed",match,-6,0,0,6
+rnbw oceanfront 2 dbl beds,room  2 double beds  partial ocean view (alii) (2 double beds),match,-6,0,0,6
+ocean view 2 double beds...50usd rsrt chg - lanai-refrigerator...access to 4 pools- mp3 clock-lux linens (corporate|odcc25),rnbw oceanfront 2 dbl beds,match,-6,0,0,6
+rnbw oceanfront 2 dbl beds,"room, 2 double beds, partial ocean view (alii) (2 double beds)",match,-6,0,0,6
+rnbw oceanfront 2 dbl beds,ocean view with two double beds - mobility accessible tub - non-refundable,match,-6,0,0,6
+rnbw oceanfront 2 dbl beds,double ocean view two double beds (non-refundable),match,-6,0,0,6
+partial ocean view 2 double beds...50usd rsrt chg - lanai-refrigerator...access to 4 pools - mp3 clock-lux linens (corporate|og12ta) non refundable,rnbw oceanfront 2 dbl beds,match,-6,0,0,6
+tapa collection ocean view 2 queen beds non refundable,rnbw oceanfront 2 dbl beds,match,-6,0,0,6
+rnbw oceanfront 2 dbl beds,partial ocean view 2 double beds...50us,match,-6,0,0,6
+tapa collection partial ocean vw 2 queen beds,"room, 2 double beds (rainbow \u2013 marina/ocean)",match,-6,0,0,6
+2 dbl ocean view mobility accessible tub,alii ocean front 2 double beds...50usd,match,-6,0,0,6
+ocean view 2 dbl beds mobility accessible tub,alii partial ocean view 2 double beds,match,-6,0,0,6
+1 doble uso individual standard,dobleuso (1pax),match,-6,0,0,6
+room 2 queen beds partial ocean view (tapa coll),room 2 queen beds ocean view (tapa coll),match,-6,0,0,6
+double (flamingo room 2 queen beds high roller view),double city view two queen beds,match,-6,0,0,6
+double city view two queen beds,standard,match,-6,0,0,6
+double room with pool view,superior double room,match,-6,0,0,6
+king studio - ocean front,"room, 1 king or 1 queen bed, oceanfront",match,-6,0,0,6
+"habitación deluxe, 1 cama de matrimonio grande, frente al mar",junior king suite,match,-6,0,0,6
+"habitación, 1 cama de matrimonio grande, balcón, frente al mar",deluxe king ocean front,match,-6,0,0,6
+double room with view,panorama double room,match,-6,0,0,6
+estudio estándar,premium studio,match,-6,0,0,6
+executive studio (2 adults),premium studio,match,-6,0,0,6
+standard single room - smoking,superior single room - non-smoking,match,-6,0,0,6
+standard single room - smoking,"premier twin room, smoking, direct train from nrt, hnd airport",match,-6,0,0,6
+apartment with garden view,double room,match,-6,0,0,6
+doppia classic,room,match,-6,0,0,6
+"red room, 1 king, high floor, non-smoking","classic room, 2 large double beds, non smoking - with daily continental breakfast credit",match,-6,0,0,6
+"red room, 1 king, high floor, smoking","classic room, 2 queen beds, non smoking",match,-6,0,0,6
+king room with garden view,queen room with garden view,match,-6,0,0,6
+japanese-style superior room - non-smoking,"habitación tradicional, en edificio anexo (10 tatami mats)",match,-6,0,0,6
+deluxe twin room - annex - non-smoking,comfort twin room - annex - non-smoking,match,-6,0,0,6
+triple room with private bathroom,standard twin room with shared bathroom,match,-6,0,0,6
+twin room,standard twin room with shared bathroom,match,-6,0,0,6
+bed in 4-bed dormitory room,triple room with private bathroom,match,-6,0,0,6
+king suite with sofa bed,suite 1 king bed non smoking,match,-6,0,0,6
+twin guest room,queen room with mobility access,match,-6,0,0,6
+bed in 4-bed female dormitory room,quadruple room with bathroom,match,-6,0,0,6
+premium room with panoramic sea view,"habitación premium, vistas al mar",match,-6,0,0,6
+premier twin room (3 persons),suite,match,-6,0,0,6
+the club room king city view (3 persons),double deluxe marina view.,match,-6,0,0,6
+deluxe king city view room,premier twin city view room (3 persons),match,-6,0,0,6
+double deluxe city view.,premier twin garden view room (3 persons),match,-6,0,0,6
+double room king bed - de luxe - garden view,premier king sky view,match,-6,0,0,6
+premier king harbor view room,premier king room - lower floor (3 persons),match,-6,0,0,6
+"suite ejecutiva, 1 cama de matrimonio grande",premier twin room,match,-6,0,0,6
+deluxe king harbor view room (3 persons),deluxe twin room (3 persons),match,-6,0,0,6
+deluxe twin garden view room,double deluxe garden view.,match,-6,0,0,6
+standard room,single bed in male dormitory room,match,-6,0,0,6
+double grand,suite grand,match,-6,0,0,6
+deluxe double/double,twin/double room - superior,match,-6,0,0,6
+skyline king with sofa bed,double room king bed - city view,match,-6,0,0,6
+premium 1 king,executive king suite,match,-6,0,0,6
+double or twin classic,double premium room,match,-6,0,0,6
+double premium room,room deluxe,match,-6,0,0,6
+"executive suite, business lounge access, city view (execuplus  suite - king bed) - incl. breakfast","executive suite, business lounge access, city view (execuplus  suite - king bed) - breakfast - no refund",match,-6,0,0,6
+"deluxe room, city view (king bed)",superior twin room,match,-6,0,0,6
+room standard,double or twin sea view,match,-6,0,0,6
+"suite junior, 1 cama de matrimonio grande","deluxe room, 1 extra large double bed",match,-6,0,0,6
+double deluxe 2 queen beds,"deluxe room, 2 large double beds",match,-6,0,0,6
+"habitación doble superior, 1 cama de matrimonio grande",standard twin room,match,-6,0,0,6
+"standard room, 2 twin beds, non smoking","single standard, standard rate",match,-6,0,0,6
+room,"superior double room, 1 queen bed",match,-6,0,0,6
+parlor suite,premium deluxe double room,match,-6,0,0,6
+"habitación tradicional (main building, 10 tatami mats)",japanese-style superior room - non-smoking,match,-6,0,0,6
+"habitación tradicional (main building, 12.5 tatami mats)",japanese room 12.5 tatami mats(main building),match,-6,0,0,6
+twin standard,double room - pool view,match,-6,0,0,6
+double room - pool view,standard room,match,-6,0,0,6
+premium room with panoramic side sea view,double or twin side sea view,match,-6,0,0,6
+standard twin room (2 twin beds) (smoking),single room - non-smoking,match,-6,0,0,6
+room - sea view,superior double room sea view,match,-6,0,0,6
+deluxe view - one king bed,skyline view  - one king bed,match,-6,0,0,6
+skyline view  - one king bed,deluxe corner king room,match,-6,0,0,6
+standard single room with city view  (single bed),standard single room (single bed),match,-6,0,0,6
+deluxe silver room (2 adults +1 child),studio suite gold (2 adults + 2 children),match,-6,0,0,6
+standard double room,standard single room (single bed),upgrade,-6,0,0,6
+standard double room,"habitación doble, baño compartido",upgrade,-6,0,0,6
+superior double room,executive double room (full double bed) (queen size bed) non refundable,upgrade,-6,0,0,6
+superior double room,comfort double room (2 twin beds),upgrade,-6,0,0,6
+superior double room,room with balcony,upgrade,-6,0,0,6
+single,double economy,upgrade,-6,0,0,6
+twin,standard room.,upgrade,-6,0,0,6
+standard double or twin room,standard double or twin room - single occupancy,upgrade,-6,0,0,6
+superior room,double premium : room only,upgrade,-6,0,0,6
+superior room,habitación premium (extralarge extrabed 2adults+1child),upgrade,-6,0,0,6
+deluxe double room,deluxe room : room and breakfast non refundable,upgrade,-6,0,0,6
+deluxe double room,"family room, 2 bedrooms",upgrade,-6,0,0,6
+triple room,single room with bath,upgrade,-6,0,0,6
+deluxe room,"executive suite with complimentary breakfast, signature afternoon tea, evening sundowners, soft refreshments and canapes",upgrade,-6,0,0,6
+deluxe room,unit-deluxe,upgrade,-6,0,0,6
+superior double or twin room,double or twin classic - non refunduble,upgrade,-6,0,0,6
+superior double or twin room,premium room - special deal non refundable,upgrade,-6,0,0,6
+superior double or twin room,budget double room,upgrade,-6,0,0,6
+superior double or twin room,premium room special deal,upgrade,-6,0,0,6
+economy double room bb,economy double/twin room with view bb nr,match,-6,0,0,6
+"premium room, balcony, 1 double bed","premium room, 2 twin beds",match,-6,0,0,6
+"habitación doble, accesible para personas con discapacidad, no fumadores","double room, accessible, non smoking",match,-6,0,0,6
+double grand deluxe - bed and breakfast,double club executive - bed and breakfast,match,-6,0,0,6
+double club executive - bed and breakfast,double grand deluxe - bed and breakfast,match,-6,0,0,6
+"two bedroom deluxe suite, jetted tub, fireplace with city/casino view - semi flex","compact king room, shower only with us fallsview - semi flex",match,-6,0,0,6
+"habitación, 2 camas de matrimonio, sin vistas - semi flex","compact king room, shower only with canadian fallsview - semi flex",match,-6,0,0,6
+"king studio, whirlpool with canadian/us fallsview - semi flex","compact king room, shower only with city view - semi flex",match,-6,0,0,6
+"compact king room, shower only with city view - semi flex",king studio suite with sofa bed and whirlpool - us falls view,match,-6,0,0,6
+"compact king room, shower only with city view - semi flex","habitación, 2 camas de matrimonio (casino/city view) - semi flex",match,-6,0,0,6
+"suite, 2 habitaciones, no fumadores (casino/city view)","compact king room, shower only with city view - semi flex",match,-6,0,0,6
+king room - canadian falls view,"compact king room, shower only with us fallsview",match,-6,0,0,6
+"compact king room, shower only with canadian fallsview","compact king room, shower only with us fallsview",match,-6,0,0,6
+"estudio, 1 cama de matrimonio grande (canadian fallsview) - semi flex","habitación, 1 cama de matrimonio grande (canadian fallsview) - semi flex",match,-6,0,0,6
+"habitación, 2 camas de matrimonio, vistas a la ciudad - semi flex","king room, jacuzzi with us fallsview - semi flex",match,-6,0,0,6
+"habitación, 1 cama de matrimonio grande (canadian fallsview)","habitación, 1 cama de matrimonio grande (us fallsview) - semi flex",match,-6,0,0,6
+"estudio, 1 cama de matrimonio grande (us fallsview)",king room - canadian falls view,match,-6,0,0,6
+"compact king room, shower only with us fallsview - semi flex","king room, jetted tub with premium canadian/us fallsview - semi flex",match,-6,0,0,6
+standard room non-refundable,run of house,match,-6,0,0,6
+double classic,double (twin/double) superior,match,-6,0,0,6
+triple classic,family room,match,-6,0,0,6
+double room - classic,triple classic,match,-6,0,0,6
+twin standard,triple classic,match,-6,0,0,6
+twin classic,classic single,match,-6,0,0,6
+superior apartment,executive suite,match,-6,0,0,6
+"room, 1 king or 1 queen bed, balcony, oceanfront","junior suite, 1 queen bed",match,-6,0,0,6
+twin (2 beds),double comfort,match,-6,0,0,6
+twin (2 beds)*,comfort double or twin room,match,-6,0,0,6
+standard double room,business suite,match,-6,0,0,6
+suite business,deluxe suite,match,-6,0,0,6
+premium,double or twin deluxe,match,-6,0,0,6
+"presidential suite, 1 king bed",presidential suite,match,-6,0,0,6
+presidential suite (2 adults + 1 child),presidential suite,match,-6,0,0,6
+club ocean front with 2 doubles - free wifi - free breakfast - free parking,presidential suite,match,-6,0,0,6
+double or twin classic,twin premium,match,-6,0,0,6
+twin room - superior,twin premium,match,-6,0,0,6
+double or twin grand deluxe,twin/double room - de luxe - pool view,match,-6,0,0,6
+kids suite,double pool view,match,-6,0,0,6
+"habitación doble superior, no fumadores (south, ages 13+ only)","habitación doble (north moderate, ages 13+ only)",match,-6,0,0,6
+"habitación doble superior, no fumadores (north, ages 13+ only)","north superior double room, non smoking - no children, ages 13+ only",match,-6,0,0,6
+"north moderate double room, non smoking - no children, ages 13+ only","south superior double room, non smoking - no children, ages 13+ only",match,-6,0,0,6
+spacious room - 2 double beds,queen room with two queen beds,match,-6,0,0,6
+"room, 1 king bed, non smoking (leisure)",queen room with two queen beds,match,-6,0,0,6
+queen room with two queen beds,triple standard,match,-6,0,0,6
+"room, 2 large double beds","junior suite, 1 king bed with sofa bed",match,-6,0,0,6
+"junior suite, 2 queen beds","room, 2 large double beds",match,-6,0,0,6
+"habitación, 2 camas de matrimonio","deluxe room, 1 king or 1 queen bed, oceanfront",match,-6,0,0,6
+"habitación, 1 cama de matrimonio grande, balcón, frente al mar - rate","habitación, 2 camas de matrimonio",match,-6,0,0,6
+"deluxe room, 1 queen bed",economy room,match,-6,0,0,6
+executive king room,"deluxe room, 1 queen bed",match,-6,0,0,6
+"habitación deluxe, 1 cama de matrimonio","habitación premium, 1 cama de matrimonio",match,-6,0,0,6
+"habitación deluxe, 1 cama de matrimonio","habitación superior, 1 cama de matrimonio",match,-6,0,0,6
+"habitación superior, 1 cama de matrimonio","habitación deluxe, 1 cama de matrimonio",match,-6,0,0,6
+double room - luxury,room deluxe,match,-6,0,0,6
+"standard twin, smoking",double luxury,match,-6,0,0,6
+"plaza superior twin, main tower, smoking",double luxury,match,-6,0,0,6
+deluxe suite with balcony- sea view- 2 adults + 2 children,deluxe suite with balcony- sea view,match,-6,0,0,6
+double single use comfort - non refunduble,comfort room  1 king bed : room only,match,-6,0,0,6
+loft gallery,package alcove cosy with two twin beds limited time offer,match,-6,0,0,6
+alcove cosy with two twin beds hello weekend - free breakfast,loft gallery,match,-6,0,0,6
+"flamingo room, 1 king bed, city view non smoking",non-smoking city view flamingo room with one king bed,match,-6,0,0,6
+room economy,cosy small room,match,-6,0,0,6
+cosy small room ( breakfast ),room economy,match,-6,0,0,6
+room economy,double room - basic,match,-6,0,0,6
+room economy,deluxe single non-smoking : breakfast,match,-6,0,0,6
+room economy,run of house,match,-6,0,0,6
+horizon deluxe single room,"1 king bed premier room, 1 king bed bed type can not be guaranteed",match,-6,0,0,6
+double club king bed - all inclusive,club ocean front corner suite - all inclusive,match,-6,0,0,6
+double club king bed - all inclusive,ziva ocean front king (with sofa bed) - all inclusive,match,-6,0,0,6
+double club - all inclusive,ziva ocean double room,match,-6,0,0,6
+ziva ocean double room,double club - all inclusive,match,-6,0,0,6
+club ocean corner suite,double club - all inclusive,match,-6,0,0,6
+family room with double bed,triple room with 1 double bed and 1 single bed (3 adults),match,-6,0,0,6
+suite - sea view,junior suite - club - sea view,match,-6,0,0,6
+ziva ocean front double room,1 king and 1 sofa bed ocean front king (with sofa bed). bed type can not be guaranteed,match,-6,0,0,6
+double king size bed-master.,1 king and 1 sofa bed ocean front king (with sofa bed). bed type can not be guaranteed,match,-6,0,0,6
+1 queen bed *standard room bed type can not be guaranteed,double room,match,-7,0,6,13
+"room, 1 double bed, non smoking",standard room non-refundable,match,-7,0,4,11
+double or twin standard - non refunduble,standard double room (full double bed) (bed type is subject to availability),match,-7,0,3,10
+"double room, multiple beds (1 fullbed + 1 twinbed) - package rate","double room, multiple beds (1 fullbed + 1 twinbed)",match,-7,0,3,10
+standard double room,twin classic,match,-7,0,3,10
+double room,urban,match,-7,0,2,9
+twin room,double bed - free breakfast,match,-7,0,2,9
+standard double room (2 twinbed),standard double room,match,-7,0,2,9
+superior king room - non-smoking,"superior room, 1 king bed, non smoking",match,-7,0,2,9
+double room,standard room - package rate,match,-7,0,1,8
+classic only bed not refundable,double room,match,-7,0,1,8
+double room,apartamento,match,-7,0,1,8
+single room,standard room 1 twin bed twinbed,match,-7,0,1,8
+garden  relax not refundable only bed-dbl,twin or double classic,match,-7,0,1,8
+2 double beds...30usd rsrt chg,2 double beds mob/hear access w/tub...30 usd rsrt chg,match,-7,0,1,8
+room deluxe king bed,room standard,match,-7,0,1,8
+twin superior sea view,double superior sea view,match,-7,0,1,8
+double king size bed,twin classic,match,-7,0,1,8
+two bedroom suite,suite two bedrooms,match,-7,0,1,8
+standard room with 2 single non refundable,standard room 2 twin beds,match,-7,0,1,8
+double queen size bed - non refunduble,queen size bed,match,-7,0,0,7
+"economy double or twin - coffee & tea,express check-in,free wifi",rom and breakfast non-ref opaque,match,-7,0,0,7
+non-smoking room with two double beds,2 twin beds non-smoking room - room only,match,-7,0,0,7
+cosy double - newly refurbished,cosy double - newly refurbished (1 fullbed),match,-7,0,0,7
+double room,double for sofa use - room with breakfast,match,-7,0,0,7
+"double or twin room, 1 double bed",double room,match,-7,0,0,7
+double room,room : room only non refundable,match,-7,0,0,7
+double room,sir boutique,match,-7,0,0,7
+double room,superior queen bed,match,-7,0,0,7
+room accessible kingbed,double room,match,-7,0,0,7
+double room,"room, 2 double beds (2 fullbed)",match,-7,0,0,7
+double room,double room with terrace sea view,match,-7,0,0,7
+double room,room deluxe non refundable,match,-7,0,0,7
+double comfort non-refundable,double room,match,-7,0,0,7
+double room,double club - all inclusive,match,-7,0,0,7
+double room,double room - attic,match,-7,0,0,7
+1 double bed *standard room. bed type can not be guaranteed,single room,match,-7,0,0,7
+single room,"deluxe room, 1 king bed",match,-7,0,0,7
+single room,"1 king bed traditional room, 1 king bed bed type can not be guaranteed",match,-7,0,0,7
+double run of house,single room,match,-7,0,0,7
+standard double room (full double bed) (balcony),twin room,match,-7,0,0,7
+twin room,standard room  double/twin bed non refundable,match,-7,0,0,7
+double standard : room only,twin room,match,-7,0,0,7
+standard double room (double bed) (queen size double bed) non refundable,twin room,match,-7,0,0,7
+twin room,room with 1 double bed non refundable,match,-7,0,0,7
+single bed in female dormitory room,twin room,match,-7,0,0,7
+double guest room queen bed,twin room,match,-7,0,0,7
+habitación triple deluxe,twin room,match,-7,0,0,7
+twin room,double or twin superior - bed and breakfast,match,-7,0,0,7
+"superior double room, sea view",twin room,match,-7,0,0,7
+quarto - vista mar,quarto - vista montanha,match,-7,0,0,7
+twin executive room + free wifi,deluxe room + free wifi,match,-7,0,0,7
+room (atic) (2 twinbed),room (atic) (1 fullbed),match,-7,0,0,7
+twin classic room + free wifi,deluxe room + free wifi,match,-7,0,0,7
+"pyramid two queen room, 2 queen beds","stay well pyramid two queen room, 2 queen beds",match,-7,0,0,7
+family room 4 twin bed,family room 4 bunk bed,match,-7,0,0,7
+double standard not refundable dbl,twin standard dbl,match,-7,0,0,7
+single superior : room only,single superior : breakfast includedcontinental,match,-7,0,0,7
+junior suite with aircondition (1 queenbed) - package rate,superior room with aircondition (1 queenbed) - package rate,match,-7,0,0,7
+twin twin superior for single use non refundable,double single use executive,match,-7,0,0,7
+premium double room - single occupancy - genius business,premium guestroom - package rate ( breakfast ),match,-7,0,0,7
+room  2 double beds  ocean view  2 fullbed non refundable,room  2 double beds (rainbow \u2013 marina/ocean)  2 fullbed non refundable,match,-7,0,0,7
+room  2 double beds  ocean view  2 fullbed non refundable,room  2 double beds  accessible  ocean view (bathtub)  2 fullbed non refundable,match,-7,0,0,7
+"habitación estándar, 2 camas individuales",standard room with two beds and complimentary internet access*,match,-7,0,0,7
+double or twin room (1 fullbed),triple room (3 twinbed),match,-7,0,0,7
+single premium room (panoramic view)  2 twin beds,single premium room - panoramic view,match,-7,0,0,7
+twin room - de luxe,double or twin deluxe-lanna,match,-7,0,0,7
+rnbw oceanfront 2 dbl beds,room 2 queen beds partial ocean view (tapa coll) non-refundable,match,-7,0,0,7
+"tapa collection partial ocean vw 2 queen beds, 50usd resort charge - lanai-refrigerator, access to 4 pools - mp3 clock - lux linens",rnbw oceanfront 2 dbl beds,match,-7,0,0,7
+rnbw oceanfront 2 dbl beds,room ocean front two double beds non refundable,match,-7,0,0,7
+shangri-la wing premier room 1 king bed non-refundable,deluxe river view king,match,-7,0,0,7
+"partial ocean view 2 double beds, 50usd rsrt chg - lanai-refrigerator, access to 4 pools - mp3 clock-lux linens","ocean view 2 double beds, 50usd rsrt chg - lanai-refrigerator, access to 4 pools- mp3 clock-lux linens",match,-7,0,0,7
+deluxe gallery,double room deluxe lanna-bed  breakfast,match,-7,0,0,7
+double city view two queen beds,"two queen room, no view - semi flex",match,-7,0,0,7
+superior double room with sea view,standard double room with limited sea view (2 adults+1child),match,-7,0,0,7
+sixty suite,"estudio, 1 cama de matrimonio grande - rate",match,-7,0,0,7
+sixty suite,"room, 1 king bed, balcony, oceanfront - rate",match,-7,0,0,7
+"studio, 1 king bed",deluxe king ocean front,match,-7,0,0,7
+junior suite with two queen beds,deluxe king ocean front,match,-7,0,0,7
+junior suite,large double or twin room,match,-7,0,0,7
+superior double room (3 adults + 1 child),superior double room (2 adults + 1 child),match,-7,0,0,7
+japanese-style deluxe room - main building - non-smoking,single room - main building - non-smoking,match,-7,0,0,7
+room allocated on arrival,room standard,match,-7,0,0,7
+suite 2 double beds,suite,match,-7,0,0,7
+view king,grand king,match,-7,0,0,7
+club king,club king room,match,-7,0,0,7
+"habitación premium, vistas al mar",premium suite with panoramic side sea view,match,-7,0,0,7
+premier twin city view room (3 persons),double room king bed - premier,match,-7,0,0,7
+premier king sky view (3 persons),family room,match,-7,0,0,7
+premier king city view room (3 persons),twin deluxe garden view.,match,-7,0,0,7
+premier king room (3 persons),orchid suite,match,-7,0,0,7
+deluxe king garden view room (3 persons),orchid suite city view,match,-7,0,0,7
+suite premium city view.,family room (3 persons),match,-7,0,0,7
+twin room - de luxe - garden view,deluxe twin city view room,match,-7,0,0,7
+"superior room, 1 queen bed, non smoking - advance purchase breakfast",standard room,match,-7,0,0,7
+double room king bed - city view,social city view king,match,-7,0,0,7
+double room king bed - city view,double room with two double beds,match,-7,0,0,7
+"habitación, 1 cama de matrimonio grande, vistas a la ciudad","room, 2 queen beds, city view",match,-7,0,0,7
+premium room 1 king bed,double room,match,-7,0,0,7
+"premium room, 1 king bed",king studio,match,-7,0,0,7
+double premium room,premier,match,-7,0,0,7
+double or twin sea view,twin room sea view fullbed*,match,-7,0,0,7
+"habitación deluxe doble, 1 cama de matrimonio grande",deluxe twin room,match,-7,0,0,7
+suite - family,"suite, multiple beds, non smoking (oversized room) - advance purchase",match,-7,0,0,7
+double room king bed - city view,double room with two double beds,match,-7,0,0,7
+"suite, pool view",suite,match,-7,0,0,7
+"club deluxe, club lounge access, guest room, west wing",deluxe twin,match,-7,0,0,7
+superior room twin tower,"club deluxe, club lounge access, guest room, west wing",match,-7,0,0,7
+1 double bed with 1 sofa bed nonsmoking,double with double bed*,match,-7,0,0,7
+standard double room (double bed) (handicap accessible),"suite, 1 cama de matrimonio grande - flash sale, save 25%!",match,-7,0,0,7
+double comfort - room only,double superior - room only,match,-7,0,0,7
+"renaissance suite, club lounge access, 1 bedroom suite",club deluxe room,match,-7,0,0,7
+deluxe twin,"renaissance suite, club lounge access, 1 bedroom suite",match,-7,0,0,7
+superior room twin tower,"renaissance suite, club lounge access, 1 bedroom suite",match,-7,0,0,7
+1 king mobility access roll in shower nosmok,1 kng acc rollin shwr ns,match,-7,0,0,7
+room standard,collection room,match,-7,0,0,7
+standard double room,standard room 2 twin beds double,upgrade,-7,0,0,7
+deluxe room,"club room with complimentary breakfast, signature afternoon tea, evening sundowners, soft refreshments and canapes",upgrade,-7,0,0,7
+deluxe double or twin room,double deluxe,upgrade,-7,0,0,7
+studio suite 1 king bed nonsmoking,one bedroom suite 1 king bed nonsmoking,match,-7,0,0,7
+"premier suite, 1 king bed, sea view","suite, 1 king bed, sea view",match,-7,0,0,7
+resort deluxe room,ocean deluxe room,match,-7,0,0,7
+"habitación, 1 cama de matrimonio grande (us fallsview) - semi flex","habitación, 2 camas de matrimonio (casino/city view)",match,-7,0,0,7
+double standard - bed and breakfast double,standard room non-refundable,match,-7,0,0,7
+double classic,twin classic dbl,match,-7,0,0,7
+standard double room - long stay,double classic,match,-7,0,0,7
+double room king bed - de luxe,double classic,match,-7,0,0,7
+twin (2 beds)*,junior suite,match,-7,0,0,7
+junior suite capacity 2,superior double room,match,-7,0,0,7
+double premier city view,suite premium,match,-7,0,0,7
+presidential suite,"suite, corner",match,-7,0,0,7
+double or twin superior,presidential suite,match,-7,0,0,7
+presidential suite,"presidential suite, 1 extra large double bed",match,-7,0,0,7
+standard non refundable - 1 bed,presidential suite,match,-7,0,0,7
+twin premium,twin sea view,match,-7,0,0,7
+suite two bedrooms,executive suite,match,-7,0,0,7
+standard room 2 twin beds,double or twin standard non refundable,match,-7,0,0,7
+standard room 1 king bed,standard room 2 twin beds,match,-7,0,0,7
+twin/double room - executive,double or twin superior - bed and breakfast,match,-7,0,0,7
+double with private pool,double pool view,match,-7,0,0,7
+single,double or twin,match,-7,0,0,7
+classic triple room,superior twin room,match,-7,0,0,7
+comfort triple room,classic triple room,match,-7,0,0,7
+"deluxe room, 1 queen bed",double guest room queen bed,match,-7,0,0,7
+double premium city view,suite run of house,match,-7,0,0,7
+2 beds full size (2 pax),twin room,match,-7,0,0,7
+basic triple room,basic twin room,match,-7,0,0,7
+de lujo vista al mar ( none ),estandar vista al mar ( none ),match,-7,0,0,7
+signature room 1 king bed,double two double beds,match,-7,0,0,7
+queen room with two queen beds,2 queen beds triple,match,-7,0,0,7
+"standard double,non-smoking (east wing)","corner delux twin,non-smoking (west wing)",match,-7,0,0,7
+double club - all inclusive,ziva club ocean front king*,match,-7,0,0,7
+deluxe room (triple room),"standard triple,non-smoking (east wing)",match,-7,0,0,7
+1 king and 1 sofa bed ocean front king (with sofa bed). bed type can not be guaranteed,double room,match,-7,0,0,7
+1 king and 1 sofa bed ocean front king (with sofa bed). bed type can not be guaranteed,ziva ocean front king*,match,-7,0,0,7
+junior family suite (2 adults + 2 children),junior family suite (2 adults + 3 children),match,-7,0,0,7
+corner hollywood quadruple room non-smoking (west wing),"hollywood twin, non-smoking (west wing)",match,-7,0,0,7
+double king size bed(double room),standard king(double room),match,-8,0,9,17
+double classic,double classic - room only,match,-8,0,5,13
+2 twin beds twin room bed type can not be guaranteed,twin room,match,-8,0,3,11
+"moderate double room, non smoking","habitación doble, no fumadores (moderate)",match,-8,0,2,10
+"habitación doble, fumadores",double room with small double bed - smoking,match,-8,0,2,10
+double classic - non refunduble,twin classic - non refunduble,match,-8,0,1,9
+fairmont room,double room,match,-8,0,1,9
+single room,double room r/o bar nonref,match,-8,0,1,9
+twin room,standard twin room - single occupancy - non-refundable,match,-8,0,1,9
+standard twin room with shared bathroom,standard single room with shared bathroom,match,-8,0,1,9
+twin/double room - luxury,double room luxury,match,-8,0,1,9
+superior apartment,apartment capacity 4 one bedroom,match,-8,0,1,9
+economy double room,double standard - non refunduble,match,-8,0,0,8
+standard room,"economy double or twin - coffee & tea,express check-in,free wifi",match,-8,0,0,8
+"double room, city view, 2 twin beds","double room, city view, 1 double bed",match,-8,0,0,8
+privilege room with twin beds(breakfast english),privilege room with twin beds,match,-8,0,0,8
+twin room a - smoking (south tower),habitación doble,match,-8,0,0,8
+6-bed mixed dormitory room,double room,match,-8,0,0,8
+double room,accessible king bed/tub (with sofa bed),match,-8,0,0,8
+double room,standard double room advance purchase ro,match,-8,0,0,8
+double room,classic room 1 queen bed queenbed non refundable,match,-8,0,0,8
+superior new style - special deal package - room only non refundable,double room,match,-8,0,0,8
+deluxe double room non-refundable,double room,match,-8,0,0,8
+double room,junior suite standard - bed and breakfast,match,-8,0,0,8
+senior suite,double room,match,-8,0,0,8
+double room,club ocean front corner suite all inclusive,match,-8,0,0,8
+double side sea view,double room,match,-8,0,0,8
+double prestige,double room,match,-8,0,0,8
+city view king,double room,match,-8,0,0,8
+bed in 4-bed dormitory room,single room,match,-8,0,0,8
+suite non refundable - 1 bed,single room,match,-8,0,0,8
+twin room,double standard : bed and breakfast,match,-8,0,0,8
+single bed in 6-bed dormitory room,twin room,match,-8,0,0,8
+twin room,standard twin room - smoking,match,-8,0,0,8
+twin classic two beds,twin room,match,-8,0,0,8
+double superior room + free wifi,twin standard room + free wifi,match,-8,0,0,8
+carson tower deluxe king (package 30% full deposit),carson tower run of house (package 30% full deposit),match,-8,0,0,8
+double partial ocean view room,ocean view room,match,-8,0,0,8
+deluxe room + free wifi,family room + free wifi,match,-8,0,0,8
+space - non refunduble,space,match,-8,0,0,8
+space,space - non refunduble,match,-8,0,0,8
+double premier room + free wifi,twin premier room + free wifi,match,-8,0,0,8
+double or twin comfort,comfort room - breakfast included in the price,match,-8,0,0,8
+premium innside room,habitación innside non refundable,match,-8,0,0,8
+twin/double room - de luxe - sea view,2 double beds skyline view,match,-8,0,0,8
+queen suite - non-smoking - breakfast included in the price,queen suite - non-smoking - non-refundable - breakfast included in the price,match,-8,0,0,8
+deluxe lanna (non-refundable),double or twin deluxe-lanna,match,-8,0,0,8
+double or twin deluxe-lanna,double premium-deluxe,match,-8,0,0,8
+double room deluxe lanna-bed  breakfast,twin/double room - lanna deluxe room,match,-8,0,0,8
+double premium-deluxe,double deluxe gallery non refundable,match,-8,0,0,8
+double premium-deluxe,double or twin deluxe lanna non refundable,match,-8,0,0,8
+king room with balcony - ocean front,sixty suite,match,-8,0,0,8
+deluxe king ocean front,king studio - ocean front,match,-8,0,0,8
+junior king suite,double deluxe king bed,match,-8,0,0,8
+deluxe king ocean front,junior king suite,match,-8,0,0,8
+"junior suite, 1 king bed, non smoking",junior king suite,match,-8,0,0,8
+junior king suite,"suite, 1 king bed, accessible",match,-8,0,0,8
+one-bedroom apartment (4 adults),superior studio (3 adults),match,-8,0,0,8
+standard twin room with sea view,standard twin room,match,-8,0,0,8
+comfort twin room - annex - non-smoking,double room with small double bed - main building - non-smoking,match,-8,0,0,8
+classic double room,classic family room,match,-8,0,0,8
+sands suite (3 persons),premier twin room (3 persons),match,-8,0,0,8
+sands suite,double garden view.,match,-8,0,0,8
+sands suite,double premier harbour view.,match,-8,0,0,8
+deluxe king room,sands suite,match,-8,0,0,8
+double harbour view.,premier twin city view room (3 persons),match,-8,0,0,8
+sands suite,premier king city view room (3 persons),match,-8,0,0,8
+premier king harbor view room (3 persons),sands suite (3 persons),match,-8,0,0,8
+sands suite (3 persons),deluxe king city view room (3 persons),match,-8,0,0,8
+sands suite (3 persons),twin premier.,match,-8,0,0,8
+sands suite (3 persons),premier twin garden view room (3 persons),match,-8,0,0,8
+deluxe king sky view (3 persons),orchid suite city view,match,-8,0,0,8
+the grand club king room,orchid suite city view,match,-8,0,0,8
+family room,orchid suite (3 persons),match,-8,0,0,8
+orchid suite (3 persons),deluxe king room,match,-8,0,0,8
+premier twin garden view room,orchid suite (3 persons),match,-8,0,0,8
+twin premier.,orchid suite city view (3 persons),match,-8,0,0,8
+deluxe twin city view room,double premier city view.,match,-8,0,0,8
+"room, 2 twin beds, smoking - advance purchase offers","habitación, 2 camas individuales, fumadores",match,-8,0,0,8
+"room, 2 twin beds, smoking - advance purchase offers","habitación, 2 camas individuales, fumadores",match,-8,0,0,8
+twin room - city view,double room king bed - city view,match,-8,0,0,8
+"premium room, 1 king bed",king room,match,-8,0,0,8
+double standard room non refundable,double premium room,match,-8,0,0,8
+double or twin sea view,premium room sea view twinbed*,match,-8,0,0,8
+"room, 2 queen beds, smoking (ultra hip (newly renovated))","habitación, 2 camas de matrimonio, fumadores (ultra hip (newly renovated))",match,-8,0,0,8
+"habitación, 1 cama de matrimonio grande, accesible para personas con discapacidad - flash sale, save 25%!","suite, 1 king bed - flash sale, save 25%!",match,-8,0,0,8
+"deluxe, guest room",1 king bed - suite - free wifi,match,-8,0,0,8
+"club deluxe, club level, guest room, west wing","superior twintower, guest room, twin tower view",match,-8,0,0,8
+double junior suite (double bed) (lounge access),"club deluxe, club level, guest room, west wing",match,-8,0,0,8
+double premium superior -non-refundable,superior double family room (double bed),match,-8,0,0,8
+lifestyle room club,superior room twin tower,match,-8,0,0,8
+"room, 1 king bed, accessible","suite, 1 cama de matrimonio grande - flash sale, save 25%!",match,-8,0,0,8
+1 king or 2 twin beds - deluxe room - wifi,superior double room (double bed),match,-8,0,0,8
+1 king or 2 twin beds - deluxe room - wifi,"renaissance suite, club lounge access, 1 bedroom suite",match,-8,0,0,8
+"deluxe, guest room, 1 king or 2 twin/single bed(s), breakfast for two","junior suite, junior suite, 1 king, east wing",match,-8,0,0,8
+"new deluxe, guest room, 1 king or 2 twin/single bed(s)",1 king or 2 twin or single bed - deluxe room - free wifi,match,-8,0,0,8
+1 king or 2 twin or single bed - deluxe room - free wifi,"junior suite, club lounge access, suite, 1 king, east wing",match,-8,0,0,8
+"deluxe, guest room","renaissance suite, club lounge access, 1 bedroom suite",match,-8,0,0,8
+"renaissance suite, club lounge access, 1 bedroom suite","superior, guest room, 1 king or 2 twin/single bed(s), east wing",match,-8,0,0,8
+"superior, guest room, 1 king or 2 twin/single bed(s)","renaissance suite, club lounge access, 1 bedroom suite",match,-8,0,0,8
+habitación doble superior,habitación doble estándar (1 bebé(s) en camas existentes y 2 individual(es) or 1 doble(s) y 1 bebé(s) en camas existentes),upgrade,-8,0,0,8
+double,economy double room bb,match,-8,0,0,8
+twin premium,"premium room, 2 twin beds",match,-8,0,0,8
+ocean king room,presidential suite,match,-8,0,0,8
+premium suite,suite king bed non smoking,match,-8,0,0,8
+premier room,double or twin deluxe.,match,-8,0,0,8
+"habitación doble superior, no fumadores (north, ages 13+ only)",standard double room (adult only) - south wing - non-smoking,match,-8,0,0,8
+basic triple room,bed in 6-bed mixed dormitory room,match,-8,0,0,8
+triple standard,twin room - executive,match,-8,0,0,8
+twin executive.,twin room - executive,match,-8,0,0,8
+room economy,deluxe single non-smoking,match,-8,0,0,8
+room economy,double,match,-8,0,0,8
+double deluxe,room economy,match,-8,0,0,8
+double room queen bed - de luxe,deluxe queen,match,-9,0,9,18
+double or twin deluxe.,deluxe,match,-9,0,7,16
+standard room - non refunduble,double room,match,-9,0,5,14
+deluxe room,"habitación deluxe, 1 cama de matrimonio",match,-9,0,5,14
+double room,standard double room non smoking,match,-9,0,4,13
+double room - pool view,double or twin pool view,match,-9,0,4,13
+double/twin bb,double room,match,-9,0,2,11
+standard room non-refundable,standard room ( no breakfast ),match,-9,0,2,11
+double classic king bed,double room,match,-9,0,1,10
+twin room,"standard room, 1 double bed, non smoking",match,-9,0,1,10
+king size bed,deluxe room,match,-9,0,1,10
+standard double room,standard room ( no breakfast ),upgrade,-9,0,1,10
+standard room non-refundable,standard room (sharedbed),match,-9,0,1,10
+suite business,suite - business,match,-9,0,1,10
+twin/double room - de luxe,double room queen bed - de luxe,match,-9,0,1,10
+one-bedroom king suite with strip view,one-bedroom king room with strip view - mobility accessible,match,-9,0,0,9
+2 bedroom suite (4 adults),2 bedroom suite (4 adults + 1 child),match,-9,0,0,9
+2 twin beds non-smoking room - room only,2 twin beds non-smoking room fit - leisure wholesale rate plan summer,match,-9,0,0,9
+double room,double single use bar bed & breakfast,match,-9,0,0,9
+double room,superior double room (1 fullbed),match,-9,0,0,9
+double room,twin/double room - urban,match,-9,0,0,9
+double room,king bed (with sofa bed),match,-9,0,0,9
+1 king mobility access roll in shower n,double room,match,-9,0,0,9
+double room,"habitación deluxe, 1 cama de matrimonio",match,-9,0,0,9
+twin room,standard room : breakfast,match,-9,0,0,9
+twin room,"room, 1 double bed, non smoking - advance purchase offers",match,-9,0,0,9
+triple room - executive,twin room,match,-9,0,0,9
+double room with small double bed - smoking,twin room,match,-9,0,0,9
+twin room with de luxe,twin room,match,-9,0,0,9
+standard double room 1 double bed fullbed,twin room,match,-9,0,0,9
+queen family room,twin room,match,-9,0,0,9
+classic double or twin room - single occupancy - breakfast included in the price,comfort double non refundable,match,-9,0,0,9
+classic double or twin room - single occupancy - breakfast included in the price,double standard : bed and breakfast,match,-9,0,0,9
+classic double or twin room - single occupancy - breakfast included in the price,comfort triple room  1 double bed,match,-9,0,0,9
+cocoon 4,cocoon 3,match,-9,0,0,9
+junior suite partial ocean view king bed,junior suite partial ocean view double bed,match,-9,0,0,9
+standard room - promo 3x2 ro - room only,standard double room (new style),match,-9,0,0,9
+superior new style - special deal package - room only non refundable,standard room - promo 3x2 ro - room only,match,-9,0,0,9
+room 2 double beds partial ocean view non-refundable,tapa collection partial ocean vw 2 queen beds...50usd resort charge - lanai-refrigerator...access to 4 pools - mp3 clock - lux linens,match,-9,0,0,9
+alii ocean view 2 double beds,room 2 queen beds partial ocean view (tapa coll),match,-9,0,0,9
+triple deluxe two queen beds,double two queen beds,match,-9,0,0,9
+"red room, 2 queens, high floor, smoking","classic room, 2 queens, non-smoking",match,-9,0,0,9
+"red room, 2 queens, high floor, smoking","red room, 1 king, high floor, non-smoking",match,-9,0,0,9
+single room - annex - non-smoking,japanese-style standard room - annex - non-smoking,match,-9,0,0,9
+the club room king city view (3 persons),family room,match,-9,0,0,9
+the grand club king room,double premier river view.,match,-9,0,0,9
+the grand club king room (3 persons),double harbour view.,match,-9,0,0,9
+the grand club king room (3 persons),twin room - de luxe - city view,match,-9,0,0,9
+premier king sky view (3 persons),sands suite (3 persons),match,-9,0,0,9
+premier twin garden view room,deluxe king room,match,-9,0,0,9
+deluxe king city view room (3 persons),orchid suite city view,match,-9,0,0,9
+premier king harbor view room,premier twin room,match,-9,0,0,9
+deluxe twin garden view room,premier twin room,match,-9,0,0,9
+premier king harbor view room,deluxe twin city view room,match,-9,0,0,9
+"room, 2 single beds, smoking - advance purchase offers","room, 2 single beds, smoking",match,-9,0,0,9
+double room king bed - city view,double room queen bed,match,-9,0,0,9
+twin/double room - luxury,twin/double room - premium,match,-9,0,0,9
+twin/double room - luxury,double room,match,-9,0,0,9
+deluxe,suite 2 bedrooms,match,-9,0,0,9
+double room with terrace,superior double room sea view,match,-9,0,0,9
+1 king bed - suite - free wifi,1 king and single bed - club room - free wifi,match,-9,0,0,9
+2 twin beds - superior room - internet,"superior, guest room, 1 king or 2 twin/single bed(s), east wing",match,-9,0,0,9
+"club deluxe, club level, guest room, west wing","renaissance suite, club level, 1 bedroom suite, 1 king",match,-9,0,0,9
+standard double room,double or twin standard,upgrade,-9,0,0,9
+"deluxe double room, mountain view","habitación confort doble, vistas a la montaña",match,-9,0,0,9
+standard room non-refundable,standard room - non refunduble,match,-9,0,0,9
+double classic,"classic room, 1 queen size bed",match,-9,0,0,9
+deluxe,double classic,match,-9,0,0,9
+triple superior,twin classic,match,-9,0,0,9
+suite premium,double room,match,-9,0,0,9
+presidential suite,superior,match,-9,0,0,9
+"habitación deluxe, 1 cama de matrimonio",double room king bed - de luxe,match,-9,0,0,9
+space best availble rate,superior room (space),match,-9,0,0,9
+"standard double,non-smoking (east wing)","moderate twin,non-smoking (west wing)",match,-9,0,0,9
+"suite club, frente al mar (corner suite)",double club - all inclusive,match,-9,0,0,9
+"suite estudio, 1 cama de matrimonio grande","studio suite, 1 king bed",match,-10,0,20,30
+double,twin (2 beds),match,-10,0,12,22
+double room,queen size bed,match,-10,0,3,13
+double room king bed - de luxe,"deluxe room, 1 king bed (1 kingbed)",match,-10,0,2,12
+habitación estándar,"habitación estándar, 2 camas individuales, no fumadores",match,-10,0,2,12
+room : accommodation only non refundable,classic room : accommodation only non refundable,match,-10,0,1,11
+single room with bathroom,double room,match,-10,0,1,11
+single room,room selected at check-in,match,-10,0,1,11
+twin room,"habitación estándar, varias camas",match,-10,0,1,11
+"red room, 1 king, eiffel view, high floor, smoking","red room, 1 king, high floor, smoking",match,-10,0,1,11
+single standard - non refunduble,double single use standard - non refunduble,match,-10,0,0,10
+\u05d1\u05e7\u05ea\u05d4 \u05d3\u05dc\u05e7\u05e1 \u05de\u05e9\u05e4\u05d7\u05ea\u05d9\u05ea \u05e2\u05dd \u05de\u05e8\u05e4\u05e1\u05ea,\u05d1\u05e7\u05ea\u05d4 \u05d3\u05dc\u05e7\u05e1 \u05d2\u05d0\u05e8\u05d3\u05df \u05e2\u05dd \u05d2'\u05e7\u05d5\u05d6\u05d9 \u05d5\u05de\u05e8\u05e4\u05e1\u05ea,match,-10,0,0,10
+matsu kabuki room non smoking - south tower,habitación doble,match,-10,0,0,10
+1 double bed mobility accessible room non-smoking,double room,match,-10,0,0,10
+double room,double guest room king bed,match,-10,0,0,10
+double room,triple room – de luxe,match,-10,0,0,10
+basic twin room,double room,match,-10,0,0,10
+two bedrooms double room,double room,match,-10,0,0,10
+double room,single room 1 twin bed,match,-10,0,0,10
+double/twin + extra bed,double room,match,-10,0,0,10
+"habitación estándar, 1 cama de matrimonio grande, no fumadores",double room,match,-10,0,0,10
+twin/double room - premium,single room,match,-10,0,0,10
+semi double room,twin room,match,-10,0,0,10
+twin room - business,twin room,match,-10,0,0,10
+smart not refundable only bed,garden & relax double/twin room bb nr,match,-10,0,0,10
+double prado deluxe ro,double prado deluxe premium ro,match,-10,0,0,10
+family room - sofa bed,family room with 1 bed and 1 sofa,match,-10,0,0,10
+japanese room 10 tatami mats(main building),"japanese room 10 tatami mats, annex building",match,-10,0,0,10
+family room (3 persons),premier twin city view room (3 persons),match,-10,0,0,10
+family room (3 persons),premier king harbor view room (3 persons),match,-10,0,0,10
+family room (3 persons),premier king city view room,match,-10,0,0,10
+orchid suite (3 persons),deluxe twin room,match,-10,0,0,10
+premier king harbor view room,family room (3 persons),match,-10,0,0,10
+deluxe twin city view room (3 persons),the grand club king room (3 persons),match,-10,0,0,10
+deluxe king room - non-smoking,superior king room - non-smoking,match,-10,0,0,10
+double room with two double beds,1 king bed,match,-10,0,0,10
+studio suite gold (2 adults + 2 children),rock royalty studio suite,match,-10,0,0,10
+studio suite gold (2 adults + 1 child),studio suite gold,match,-10,0,0,10
+"bella suite, 2 queen beds","suite, 2 camas de matrimonio, con vistas",match,-10,0,0,10
+triple room – de luxe,twin room - single use - de luxe,match,-10,0,0,10
+"junior suite, 1 queen bed","junior suite, 1 king bed with sofa bed",match,-10,0,0,10
+suite king size bed,suite premium,match,-10,0,0,10
+double garden view,suite premium,match,-10,0,0,10
+presidential suite,twin deluxe,match,-10,0,0,10
+twin premium,"premium room, 1 king bed",match,-10,0,0,10
+habitación clásica doble,classic triple room,match,-10,0,0,10
+double room queen bed,"deluxe room, 1 queen bed",match,-10,0,0,10
+twin/double room,room economy,match,-10,0,0,10
+"hollywood twin, non-smoking (west wing)","standard triple,non-smoking (east wing)",match,-10,0,0,10
+"hollywood twin, non-smoking (west wing)","deluxe double,non-smoking (west wing)",match,-10,0,0,10
+double room,"standard room, 1 double bed",match,-11,0,27,38
+standard double room (double bed) (bed type is subject to availability) non refundable,double room,match,-11,0,7,18
+room non refundable,double standard - non refunduble,match,-11,0,5,16
+double standard - non refunduble,double or twin standard,match,-11,0,4,15
+double/twin (2 people),twin room,match,-11,0,4,15
+double standard,room : accommodation only non refundable,match,-11,0,2,13
+double superior - non refunduble,room superior - non refunduble,match,-11,0,1,12
+king size bed,double room,match,-11,0,1,12
+twin side sea view bb room,twin sea view bb room,match,-11,0,1,12
+"standard twin room, 2 twin beds (2 twinbed)",twin room,match,-11,0,1,12
+double king size bed.,double deluxe king bed.,match,-11,0,1,12
+standard room non-refundable,standard king,match,-11,0,1,12
+2 bedroom suite (2 adults + 2 children),2 bedroom suite (4 adults + 1 child),match,-11,0,0,11
+2 bedroom suite (3 adults + 2 children),2 bedroom suite (2 adults + 2 children),match,-11,0,0,11
+room : bed & breakfast non refundable,room standard,match,-11,0,0,11
+double room,economy double room (full double bed),match,-11,0,0,11
+double room,standard double room - single occupancy,match,-11,0,0,11
+double room,single room - classic,match,-11,0,0,11
+double room,"standard room, 1 king or 1 queen bed",match,-11,0,0,11
+double room,junior suite double,match,-11,0,0,11
+family room standard non-refundable,twin room,match,-11,0,0,11
+double economy room with french bed + free wifi,comfort room + free wifi,match,-11,0,0,11
+standard twin room - non-smoking,standard single room - smoking,match,-11,0,0,11
+deluxe twin garden view room (3 persons),the grand club king room,match,-11,0,0,11
+premier king room (3 persons),premier twin garden view room,match,-11,0,0,11
+orchid suite (3 persons),deluxe king sky view,match,-11,0,0,11
+deluxe twin city view room (3 persons),family room,match,-11,0,0,11
+"room, 1 king bed, non smoking (ultra resort vista (newly renovated))","suite, 1 king bed, non smoking (ultra, strip view (newly renovated))",match,-11,0,0,11
+habitación doble,twin (2 beds),match,-11,0,0,11
+standard double room,presidential suite,match,-11,0,0,11
+standard room 2 twin beds,room non refundable,match,-11,0,0,11
+executive suite,double or twin deluxe - bed and breakfast,match,-11,0,0,11
+"habitación, 2 camas de matrimonio",standard,match,-11,0,0,11
+king room,"deluxe room, 1 queen bed",match,-11,0,0,11
+double luxury,twin/double room - superior,match,-11,0,0,11
+twin room - executive,executive suite,match,-11,0,0,11
+double with double bed,habitación doble,match,-12,0,10,22
+standard single room (full double bed) (bed type is subject to availability),single room,match,-12,0,4,16
+room classic not refundable,classic only bed not refundable,match,-12,0,2,14
+habitación doble estándar (1 doble(s) grande(s)),habitación twin estándar (2 individual(es)),match,-12,0,0,12
+standard room with 1 double bed(breakfast continental),standard room with 1 double bed(breakfast english),match,-12,0,0,12
+family room standard non-refundable,double room,match,-12,0,0,12
+2 twin beds *twin room bed type can not be guaranteed,double room,match,-12,0,0,12
+twin classic,single room,match,-12,0,0,12
+twin room,deluxe room 1 king bed,match,-12,0,0,12
+double two queen beds non smoking,double city view two queen beds,match,-12,0,0,12
+the grand club king room (3 persons),premier king room (3 persons),match,-12,0,0,12
+premier twin city view room (3 persons),deluxe twin garden view room (3 persons),match,-12,0,0,12
+premier king city view room (3 persons),the grand club king garden view room (3 persons),match,-12,0,0,12
+orchid suite city view (3 persons),premier king harbor view room,match,-12,0,0,12
+executive suite,premier twin room,match,-12,0,0,12
+twin/double room - de luxe,deluxe double/double,match,-12,0,0,12
+deluxe room,"premium room, 1 king bed",match,-12,0,0,12
+double premium room,superior double or twin room,match,-12,0,0,12
+double or twin sea view,"twin room, partial sea view",match,-12,0,0,12
+superior king,superior double family room (double bed),match,-12,0,0,12
+economy double room bb,smart,match,-12,0,0,12
+"2 twin beds *classic room, 2 twin beds. bed type can not be guaranteed",twin classic,match,-12,0,0,12
+double room,double pool view,match,-12,0,0,12
+queen room with two queen beds,double king bed non smoking,match,-12,0,0,12
+deluxe double room (double bed),queen room with two queen beds,match,-12,0,0,12
+twin room - executive,double or twin standard,match,-12,0,0,12
+double classic,standard,match,-13,0,25,38
+twin standard non refundable,standard room 2 twin beds,match,-13,0,5,18
+double room,quarto standard.,match,-13,0,3,16
+"habitación superior, 1 cama de matrimonio, vistas a la ciudad","superior room, 1 queen bed, city view",match,-13,0,3,16
+economy double room bb,economy double french bed ro,match,-13,0,1,14
+double classic,single room - classic,match,-13,0,1,14
+estudio,double room,match,-13,0,0,13
+double room (1 adult),twin room,match,-13,0,0,13
+deluxe twin city view room (3 persons),orchid suite city view,match,-13,0,0,13
+"premium room, 1 king bed",suite king size bed,match,-13,0,0,13
+"premium room, sea view",double or twin sea view,match,-13,0,0,13
+premium junior suite,parlor suite,match,-13,0,0,13
+studio suite gold,studio suite silver (2 adults + 1 child),match,-13,0,0,13
+standard room non-refundable,deluxe double or twin room,match,-13,0,0,13
+double classic,deluxe double,match,-13,0,0,13
+twin/double room,premium,match,-13,0,0,13
+"standard room, 1 king bed",queen room with two queen beds,match,-13,0,0,13
+1 king bed nonsmoking,queen room with two queen beds,match,-13,0,0,13
+"standard room, 1 double bed, non smoking","standard room, 2 twin beds, non smoking",match,-14,0,5,19
+twin two beds,twin classic,match,-14,0,3,17
+double room,twin standard nrf,match,-14,0,2,16
+habitación deluxe doble,habitación doble,match,-14,0,1,15
+resort king room,double room king bed - volcano view,match,-14,0,0,14
+habitación con 2 camas individuales - no-refunds,habitación con 2 camas individuales,match,-14,0,0,14
+twin/double room - grand de luxe,double room,match,-14,0,0,14
+double room,twin superior non refundable,match,-14,0,0,14
+single room,single economy room,match,-14,0,0,14
+twin room,triple room – de luxe,match,-14,0,0,14
+standard queen,twin room,match,-14,0,0,14
+twin/double room - business,twin room,match,-14,0,0,14
+junior suite - package rate ( breakfast ),twin/double room,match,-14,0,0,14
+"premium room, 1 king bed","suite, 1 king bed",match,-14,0,0,14
+double room with two double beds,king suite,match,-14,0,0,14
+twin/double room - luxury,twin room - luxury,match,-14,0,0,14
+standard double room (1 queenbed),double room,match,-15,0,2,17
+superior room : bed & breakfast,superior room : accommodation only non refundable,match,-15,0,1,16
+room - pool view,room with views,match,-15,0,1,16
+twin/double room - de luxe,double room - luxury,match,-15,0,1,16
+standard twin room non refundable,double room,match,-15,0,0,15
+twin room,single room - de luxe,match,-15,0,0,15
+double superior executive room,double superior room - semi flexible,match,-15,0,0,15
+premium guestroom ( breakfast ),junior suite - package rate ( none ),match,-15,0,0,15
+deluxe king city view room,premier king sky view (3 persons),match,-15,0,0,15
+premier king harbor view room (3 persons),deluxe king city view room,match,-15,0,0,15
+orchid suite city view (3 persons),premier king sky view,match,-15,0,0,15
+economy french bed bb nr,economy double room bb,match,-15,0,0,15
+twin standard,twin classic,match,-16,0,14,30
+"standard room, 2 twin beds, non smoking",standard room 2 twin beds non smoking,match,-16,0,10,26
+room : accommodation only non refundable,double room,match,-16,0,3,19
+double or twin side sea view non-refundable,double or twin side sea view,match,-16,0,2,18
+1 double bed mobility accessible room non-smoking fit - leisure wholes,1 double bed mobility accessible room non-smoking,match,-16,0,1,17
+1 double bed mobility accessible room non-smoking,1 double bed mobility accessible room non-smoking fit tour operator -,match,-16,0,1,17
+"resort tower king, 1 king bed",stay well king (1 kingbed),match,-16,0,0,16
+double room,double junior suite (double bed),match,-16,0,0,16
+"double room, sea view",double room,match,-16,0,0,16
+single room,quintuple room,match,-16,0,0,16
+standard room,superior guestroom - package rate ( breakfast ),match,-16,0,0,16
+"new burgundy room, 2 queens, eiffel view, non-smoking","new burgundy room, 2 queen, non-smoking",match,-16,0,0,16
+premier twin garden view room (3 persons),premier twin city view room (3 persons),match,-16,0,0,16
+premier twin city view room (3 persons),premier twin garden view room (3 persons),match,-16,0,0,16
+premier twin city view room,deluxe twin city view room (3 persons),match,-16,0,0,16
+habitación ejecutiva con 2 camas individuales,twin room - executive,match,-16,0,0,16
+room standard - non refunduble,double room,match,-17,0,4,21
+premium queen room,premium room,match,-17,0,3,20
+double room - superior,double standard - non refunduble,match,-17,0,1,18
+double or twin sea view,twin/double room - balcony - sea view,match,-17,0,1,18
+twin/double room,superior guestroom - package rate ( none ),match,-17,0,0,17
+parlor suite,suite (parlor),match,-17,0,0,17
+double or twin standard,presidential suite,match,-17,0,0,17
+deluxe,presidential suite,match,-17,0,0,17
+double or twin city view - non refunduble,double or twin city view,match,-17,0,0,17
+double room,room only,match,-18,0,3,21
+double room,triple standard - bed and breakfast,match,-18,0,0,18
+double room,economy double or twin room,match,-18,0,0,18
+double grand,double room,match,-18,0,0,18
+family room with bathroom,twin room,match,-18,0,0,18
+twin room,double room with extra bed,match,-18,0,0,18
+double room sole use,twin room,match,-18,0,0,18
+premium queen room,premium king room,match,-18,0,0,18
+single room,double king size bed,match,-19,0,2,21
+twin room,double room 1 double bed,match,-19,0,1,20
+double room,twin deluxe room,match,-19,0,0,19
+double standard - non refunduble,twin/double room,match,-20,0,9,29
+"standard twin room, 2 twin beds",double room,match,-20,0,2,22
+twin room - non-smoking,double room,match,-20,0,1,21
+double room,twin/double room - business,match,-20,0,1,21
+twin room,premium twin room,match,-20,0,0,20
+"connecting/ 4 persons,non-smoking (west wing)","luxury  room,non-smoking (west wing)",match,-20,0,0,20
+double room,twin two double beds,match,-21,0,2,23
+double room,double room queen bed - de luxe,match,-21,0,0,21
+twin room,bed in 8-bed mixed dormitory room,match,-21,0,0,21
+twin classic not refundable dbl,double classic dbl,match,-21,0,0,21
+double room - luxury,double room,match,-21,0,0,21
+"moderate quadruple,non-smoking (west wing)","connecting/ 4 persons,non-smoking (west wing)",match,-21,0,0,21
+twin room,deluxe triple room,match,-22,0,0,22
+standard double room (full double bed) (bed type is subject to availability),twin room,match,-23,0,13,36
+double or twin room,double room (1 adult),match,-23,0,10,33
+twin luxury,double luxury,match,-23,0,2,25
+room,premium guestroom - package rate ( none ),match,-23,0,0,23
+one-bedroom apartment (3 adults),one-bedroom apartment (4 adults),match,-24,0,2,26
+twin capacity 1,single room,match,-24,0,1,25
+double room,suite deluxe,match,-24,0,0,24
+single room,double room with balcony,match,-24,0,0,24
+room economy,double room,match,-25,0,0,25
+standard room 1 double bed,standard room 2 twin beds,match,-26,0,5,31
+premium room,twin premium,match,-27,0,0,27
+double/twin- : breakfast includedcontinental,double/twin- non refundable,match,-27,0,0,27
+double standard - non refunduble,twin standard,match,-28,0,4,32
+twin classic,classic double room,match,-28,0,4,32
+single room,double room - small,match,-28,0,0,28
+standard twin room non-refundable,twin room,match,-29,0,14,43
+standard twin room (2 twin beds),single room,match,-29,0,0,29
+standard room 2 twin beds,"standard room, 2 twin beds",match,-30,0,35,65
+twin/double room - superior - sea view,double or twin sea view,match,-30,0,1,31
+bed in 4-bed dormitory room,bed in 6-bed mixed dormitory room,match,-30,0,0,30
+single room - non-smoking,deluxe twin room - non-smoking,match,-30,0,0,30
+executive twin,twin room,match,-31,0,0,31
+double or twin superior - bed and breakfast,double or twin standard - bed and breakfast,match,-31,0,0,31
+habitación doble,superior double room,match,-32,0,2,34
+twin premium,twin room - premium,match,-33,0,4,37
+room economy,double economy,match,-33,0,1,34
+double room,twin room standard-bed  breakfast,match,-34,0,12,46
+habitación con 2 camas individuales,twin standard,match,-34,0,11,45
+double room - pool view,room - pool view,match,-34,0,4,38
+double or twin deluxe,double or twin deluxe - non refunduble,match,-35,0,5,40
+double or twin superior - non refunduble,twin/double room - superior,match,-35,0,3,38
+double room,habitación deluxe doble,match,-35,0,0,35
+executive king room,double room,match,-35,0,0,35
+single room - non-smoking,triple room - non-smoking,match,-35,0,0,35
+standard room non-refundable,double room,match,-36,0,46,82
+premium,premium room,match,-36,0,10,46
+premium room,premium,match,-36,0,10,46
+single room,double room sole use,match,-36,0,2,38
+double room,habitación estándar con 2 camas individuales,match,-39,0,7,46
+premium room 1 king bed,"premium room, 1 king bed",match,-39,0,7,46
+executive suite,presidential suite,match,-39,0,0,39
+double room,"habitación estándar, 2 camas individuales",match,-40,0,2,42
+superior double,twin room,match,-40,0,2,42
+double room,twin/double room - sea view,match,-43,0,0,43
+double or twin sea view,double or twin superior sea view,match,-43,0,0,43
+twin room,family room standard,match,-44,0,0,44
+habitación doble,room,match,-47,0,35,82
+double classic,classic,match,-48,-1000,51,99
+double city view,double room,match,-49,0,3,52
+twin/double room - premium,twin room,match,-49,0,0,49
+double queen size bed,twin room,match,-54,0,0,54
+double pool view,double room - pool view,match,-55,0,4,59
+room - pool view,twin/double room - pool view,match,-56,0,6,62
+habitación doble,habitación con 2 camas individuales,match,-64,0,6,70
+double room,deluxe suite,match,-65,0,1,66
+double room,double room king bed - de luxe,match,-91,0,0,91
+double or twin sea view,room - sea view,match,-103,0,31,134
+deluxe room,twin room,match,-118,0,1,119
+double room,double room sea view,match,-127,0,0,127
+run of the house,double room,match,-200,0,1,201
+triple room,twin room,match,-478,0,4,482
+triple room with bathroom,quadruple room with bathroom,match,-1008,-1000,0,8
+premier king harbor view room,the club room king city view (3 persons),match,-1023,-1000,0,23
+premier king sky view,premier king harbor view room,match,-1023,-1000,0,23
+premier king harbor view room,premier king sky view,match,-1023,-1000,0,23
+standard double room - annex,twin room,match,-2006,-1000,0,6
