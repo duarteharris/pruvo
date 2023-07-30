@@ -7513,6 +7513,7 @@ by: Duarte Harris</p>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span> <span class="c1"># vectorizers</span>
 <span class="kn">import</span> <span class="nn">spacy</span>
+<span class="kn">from</span> <span class="nn">tqdm.notebook</span> <span class="kn">import</span> <span class="n">tqdm</span>
 
 <span class="c1"># import language models</span>
 <span class="kn">import</span> <span class="nn">en_core_web_trf</span>
@@ -7524,6 +7525,8 @@ by: Duarte Harris</p>
 <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"TOKENIZERS_PARALLELISM"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"FALSE"</span> <span class="c1"># to solve the parallelism warning</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">color_codes</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="n">tqdm</span><span class="o">.</span><span class="n">pandas</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -7887,8 +7890,6 @@ spacy: 3.5.3
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -7901,8 +7902,6 @@ spacy: 3.5.3
 <td>1000</td>
 <td>5</td>
 <td>6</td>
-<td>standard room twin beds non refundable</td>
-<td>twin room</td>
 </tr>
 <tr>
 <th>3</th>
@@ -7913,8 +7912,6 @@ spacy: 3.5.3
 <td>1000</td>
 <td>5</td>
 <td>8</td>
-<td>double room</td>
-<td>room 1 double bed non smoking fullbed</td>
 </tr>
 <tr>
 <th>4</th>
@@ -7925,8 +7922,6 @@ spacy: 3.5.3
 <td>1000</td>
 <td>1</td>
 <td>6</td>
-<td>traditional room 2 queen beds</td>
-<td>queen room queen beds</td>
 </tr>
 <tr>
 <th>6</th>
@@ -7937,8 +7932,6 @@ spacy: 3.5.3
 <td>1000</td>
 <td>2</td>
 <td>11</td>
-<td>standard double twin</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>9</th>
@@ -7949,8 +7942,6 @@ spacy: 3.5.3
 <td>1000</td>
 <td>1</td>
 <td>44</td>
-<td>grand suite</td>
-<td>suite grand</td>
 </tr>
 </tbody>
 </table>
@@ -8018,8 +8009,6 @@ spacy: 3.5.3
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -8614,8 +8603,6 @@ spacy: 3.5.3
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -8628,8 +8615,6 @@ spacy: 3.5.3
 <td>1000</td>
 <td>7</td>
 <td>44</td>
-<td>twin room</td>
-<td>twin room 2 twin beds</td>
 </tr>
 <tr>
 <th>981</th>
@@ -8640,8 +8625,6 @@ spacy: 3.5.3
 <td>-1000</td>
 <td>51</td>
 <td>99</td>
-<td>double classic</td>
-<td>classic</td>
 </tr>
 <tr>
 <th>999</th>
@@ -8652,8 +8635,6 @@ spacy: 3.5.3
 <td>-1000</td>
 <td>0</td>
 <td>6</td>
-<td>standard double room    annex</td>
-<td>twin room</td>
 </tr>
 </tbody>
 </table>
@@ -9208,7 +9189,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;seaborn.axisgrid.PairGrid at 0x1482d46d0&gt;</pre>
+<pre>&lt;seaborn.axisgrid.PairGrid at 0x139b4ea90&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -9502,11 +9483,7 @@ Name: type, dtype: int64</pre>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># checking value counts of score</span>
 <span class="c1"># needed to iterate over them to print more in the output so as to share a better perspective</span>
-<span class="p">[</span>
-    <span class="n">val_count</span>
-    <span class="k">for</span> <span class="n">val_count</span>
-    <span class="ow">in</span> <span class="n">rooms_df</span><span class="p">[</span><span class="s2">"score"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-<span class="p">]</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">rooms_df</span><span class="p">[</span><span class="s2">"score"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
 </pre></div>
 </div>
 </div>
@@ -9702,8 +9679,6 @@ Name: admin, dtype: int64</pre>
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -9716,8 +9691,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>7</td>
 <td>44</td>
-<td>twin room</td>
-<td>twin room 2 twin beds</td>
 </tr>
 <tr>
 <th>1</th>
@@ -9728,8 +9701,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>10</td>
 <td>6</td>
-<td>queen room queen beds</td>
-<td>2 queen beds non smoking</td>
 </tr>
 <tr>
 <th>2</th>
@@ -9740,8 +9711,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>5</td>
 <td>6</td>
-<td>standard room twin beds non refundable</td>
-<td>twin room</td>
 </tr>
 <tr>
 <th>3</th>
@@ -9752,8 +9721,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>5</td>
 <td>8</td>
-<td>double room</td>
-<td>room 1 double bed non smoking fullbed</td>
 </tr>
 <tr>
 <th>4</th>
@@ -9764,8 +9731,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>1</td>
 <td>6</td>
-<td>traditional room 2 queen beds</td>
-<td>queen room queen beds</td>
 </tr>
 <tr>
 <th>5</th>
@@ -9776,8 +9741,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>6</td>
 <td>12</td>
-<td>double room</td>
-<td>standard double room 1 queen bed</td>
 </tr>
 <tr>
 <th>6</th>
@@ -9788,8 +9751,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>2</td>
 <td>11</td>
-<td>standard double twin</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>7</th>
@@ -9800,8 +9761,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>7</td>
 <td>26</td>
-<td>twin room</td>
-<td>habitación 2 camas individuales</td>
 </tr>
 <tr>
 <th>8</th>
@@ -9812,8 +9771,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>7</td>
 <td>39</td>
-<td>classic triple room</td>
-<td>habitación triple clásica</td>
 </tr>
 <tr>
 <th>9</th>
@@ -9824,8 +9781,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>1</td>
 <td>44</td>
-<td>grand suite</td>
-<td>suite grand</td>
 </tr>
 <tr>
 <th>10</th>
@@ -9836,8 +9791,6 @@ Name: admin, dtype: int64</pre>
 <td>1000</td>
 <td>87</td>
 <td>151</td>
-<td>standard double room double bed</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>11</th>
@@ -9848,8 +9801,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>86</td>
 <td>73</td>
-<td>double standard non refundable</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>12</th>
@@ -9860,8 +9811,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>33</td>
 <td>25</td>
-<td>habitación doble fumadores</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>13</th>
@@ -9872,8 +9821,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>22</td>
 <td>14</td>
-<td>double room</td>
-<td>standard doubletwin room</td>
 </tr>
 <tr>
 <th>14</th>
@@ -9884,8 +9831,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>16</td>
 <td>8</td>
-<td>double bed room</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>15</th>
@@ -9896,8 +9841,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>29</td>
 <td>23</td>
-<td>queen room queen beds</td>
-<td>room 2 queen beds</td>
 </tr>
 <tr>
 <th>16</th>
@@ -9908,8 +9851,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>16</td>
 <td>10</td>
-<td>superior double room</td>
-<td>double superior    non refunduble</td>
 </tr>
 <tr>
 <th>17</th>
@@ -9920,8 +9861,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>12</td>
 <td>6</td>
-<td>deluxe queen</td>
-<td>deluxe room 1 queen bed</td>
 </tr>
 <tr>
 <th>18</th>
@@ -9932,8 +9871,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>15</td>
 <td>10</td>
-<td>double classic</td>
-<td>classic room bb</td>
 </tr>
 <tr>
 <th>19</th>
@@ -9944,8 +9881,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>14</td>
 <td>9</td>
-<td>economy double twin room</td>
-<td>twin economy</td>
 </tr>
 <tr>
 <th>20</th>
@@ -9956,8 +9891,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>14</td>
 <td>9</td>
-<td>room + room</td>
-<td>double standard</td>
 </tr>
 <tr>
 <th>21</th>
@@ -9968,8 +9901,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>12</td>
 <td>7</td>
-<td>double deluxe king</td>
-<td>deluxe king room</td>
 </tr>
 <tr>
 <th>22</th>
@@ -9980,8 +9911,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>34</td>
 <td>30</td>
-<td>triple standard    non refunduble</td>
-<td>triple room</td>
 </tr>
 <tr>
 <th>23</th>
@@ -9992,8 +9921,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>19</td>
 <td>15</td>
-<td>queen room queen beds</td>
-<td>2 queen beds nonsmoking</td>
 </tr>
 <tr>
 <th>24</th>
@@ -10004,8 +9931,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>10</td>
 <td>6</td>
-<td>habitación superior 1 fullbed</td>
-<td>habitación superior 1 fullbed    package rate</td>
 </tr>
 <tr>
 <th>25</th>
@@ -10016,8 +9941,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>10</td>
 <td>6</td>
-<td>double twin</td>
-<td>classic double twin room</td>
 </tr>
 <tr>
 <th>26</th>
@@ -10028,8 +9951,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>20</td>
 <td>17</td>
-<td>deluxe room 1 queen bed</td>
-<td>deluxe double room</td>
 </tr>
 </tbody>
 </table>
@@ -10107,8 +10028,6 @@ Name: admin, dtype: int64</pre>
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -10121,8 +10040,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>15</td>
 <td>21</td>
-<td>double twin sea view</td>
-<td>sea view room</td>
 </tr>
 <tr>
 <th>28</th>
@@ -10133,8 +10050,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>6</td>
 <td>12</td>
-<td>standard room pool view</td>
-<td>double pool view</td>
 </tr>
 <tr>
 <th>29</th>
@@ -10145,8 +10060,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>5</td>
 <td>11</td>
-<td>twin room</td>
-<td>standard room</td>
 </tr>
 <tr>
 <th>30</th>
@@ -10157,8 +10070,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>4</td>
 <td>10</td>
-<td>habitacion doble 2 camas    classic</td>
-<td>habitacion doble cama doble    classic</td>
 </tr>
 <tr>
 <th>31</th>
@@ -10169,13 +10080,9 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>4</td>
 <td>10</td>
-<td>twin room</td>
-<td>standard room   breakfast</td>
 </tr>
 <tr>
 <th>...</th>
-<td>...</td>
-<td>...</td>
 <td>...</td>
 <td>...</td>
 <td>...</td>
@@ -10193,8 +10100,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>31</td>
 <td>134</td>
-<td>double twin sea view</td>
-<td>room    sea view</td>
 </tr>
 <tr>
 <th>991</th>
@@ -10205,8 +10110,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>1</td>
 <td>119</td>
-<td>deluxe room</td>
-<td>twin room</td>
 </tr>
 <tr>
 <th>992</th>
@@ -10217,8 +10120,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>127</td>
-<td>double room</td>
-<td>double room sea view</td>
 </tr>
 <tr>
 <th>993</th>
@@ -10229,8 +10130,6 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>1</td>
 <td>201</td>
-<td>run house</td>
-<td>double room</td>
 </tr>
 <tr>
 <th>994</th>
@@ -10241,12 +10140,10 @@ Name: admin, dtype: int64</pre>
 <td>0</td>
 <td>4</td>
 <td>482</td>
-<td>triple room</td>
-<td>twin room</td>
 </tr>
 </tbody>
 </table>
-<p>967 rows × 9 columns</p>
+<p>967 rows × 7 columns</p>
 </div>
 </div>
 </div>
@@ -10426,7 +10323,7 @@ Name: unlinks, dtype: int64</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># confirming there are no unlinks that are 0</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There are no entries with 0 'unlinks': </span><span class="si">{</span><span class="n">rooms_df</span><span class="p">[</span><span class="s1">'unlinks'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">None</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There are no entries with 0 'unlinks': </span><span class="si">{</span><span class="n">rooms_df</span><span class="p">[</span><span class="s1">'unlinks'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="ow">is</span><span class="w"> </span><span class="kc">None</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10512,8 +10409,6 @@ Name: unlinks, dtype: int64</pre>
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -10526,8 +10421,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>standard double room</td>
-<td>standard single room single bed</td>
 </tr>
 <tr>
 <th>288</th>
@@ -10538,8 +10431,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>standard double room</td>
-<td>habitación doble baño compartido</td>
 </tr>
 <tr>
 <th>289</th>
@@ -10550,8 +10441,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double room</td>
-<td>executive double room double bed queen size be...</td>
 </tr>
 <tr>
 <th>290</th>
@@ -10562,8 +10451,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double room</td>
-<td>comfort double room 2 twin beds</td>
 </tr>
 <tr>
 <th>291</th>
@@ -10574,8 +10461,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double room</td>
-<td>room balcony</td>
 </tr>
 <tr>
 <th>292</th>
@@ -10586,8 +10471,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>single</td>
-<td>double economy</td>
 </tr>
 <tr>
 <th>293</th>
@@ -10598,8 +10481,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>twin</td>
-<td>standard room</td>
 </tr>
 <tr>
 <th>294</th>
@@ -10610,8 +10491,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>standard double twin room</td>
-<td>standard double twin room    single occupancy</td>
 </tr>
 <tr>
 <th>295</th>
@@ -10622,8 +10501,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior room</td>
-<td>double premium room</td>
 </tr>
 <tr>
 <th>296</th>
@@ -10634,8 +10511,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior room</td>
-<td>habitación premium extralarge extrabed 2adults...</td>
 </tr>
 <tr>
 <th>297</th>
@@ -10646,8 +10521,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>deluxe double room</td>
-<td>deluxe room room breakfast non refundable</td>
 </tr>
 <tr>
 <th>298</th>
@@ -10658,8 +10531,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>deluxe double room</td>
-<td>family room 2 bedrooms</td>
 </tr>
 <tr>
 <th>299</th>
@@ -10670,8 +10541,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>triple room</td>
-<td>single room bath</td>
 </tr>
 <tr>
 <th>300</th>
@@ -10682,8 +10551,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>deluxe room</td>
-<td>executive suite complimentary breakfast signat...</td>
 </tr>
 <tr>
 <th>301</th>
@@ -10694,8 +10561,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>deluxe room</td>
-<td>unit deluxe</td>
 </tr>
 <tr>
 <th>302</th>
@@ -10706,8 +10571,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double twin room</td>
-<td>double twin classic    non refunduble</td>
 </tr>
 <tr>
 <th>303</th>
@@ -10718,8 +10581,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double twin room</td>
-<td>premium room    special deal non refundable</td>
 </tr>
 <tr>
 <th>304</th>
@@ -10730,8 +10591,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double twin room</td>
-<td>budget double room</td>
 </tr>
 <tr>
 <th>305</th>
@@ -10742,8 +10601,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>superior double twin room</td>
-<td>premium room special deal</td>
 </tr>
 <tr>
 <th>498</th>
@@ -10754,8 +10611,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>7</td>
-<td>standard double room</td>
-<td>standard room 2 twin beds double</td>
 </tr>
 <tr>
 <th>499</th>
@@ -10766,8 +10621,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>7</td>
-<td>deluxe room</td>
-<td>club room complimentary breakfast signature af...</td>
 </tr>
 <tr>
 <th>500</th>
@@ -10778,8 +10631,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>7</td>
-<td>deluxe double twin room</td>
-<td>double deluxe</td>
 </tr>
 <tr>
 <th>639</th>
@@ -10790,8 +10641,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>8</td>
-<td>habitación doble superior</td>
-<td>habitación doble estándar 1 bebés en camas exi...</td>
 </tr>
 <tr>
 <th>663</th>
@@ -10802,8 +10651,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>1</td>
 <td>10</td>
-<td>standard double room</td>
-<td>standard room   breakfast</td>
 </tr>
 <tr>
 <th>715</th>
@@ -10814,8 +10661,6 @@ Name: unlinks, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>9</td>
-<td>standard double room</td>
-<td>double twin standard</td>
 </tr>
 </tbody>
 </table>
@@ -11242,8 +11087,6 @@ Name: name1, Length: 667, dtype: int64</pre>
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -11256,8 +11099,6 @@ Name: name1, Length: 667, dtype: int64</pre>
 <td>1000</td>
 <td>5</td>
 <td>6</td>
-<td>standard room twin beds non refundable</td>
-<td>twin room</td>
 </tr>
 </tbody>
 </table>
@@ -11490,7 +11331,7 @@ Name: name2, Length: 694, dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11501,20 +11342,6 @@ Name: name2, Length: 694, dtype: int64</pre>
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># loading the language model</span>
 <span class="n">nlp</span> <span class="o">=</span> <span class="n">en_core_web_trf</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/opt/anaconda3/envs/pruvo_env/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
-</pre>
 </div>
 </div>
 </div>
@@ -11953,8 +11780,6 @@ ocean view 2 double beds 50usd rsrt chg    lanai refrigerator access 4 pools   m
 <th>admin</th>
 <th>links</th>
 <th>unlinks</th>
-<th>reserved</th>
-<th>suggested</th>
 </tr>
 </thead>
 <tbody>
@@ -11967,8 +11792,6 @@ ocean view 2 double beds 50usd rsrt chg    lanai refrigerator access 4 pools   m
 <td>0</td>
 <td>0</td>
 <td>10</td>
-<td>\u05d1\u05e7\u05ea\u05d4 \u05d3\u05dc\u05e7\u0...</td>
-<td>\u05d1\u05e7\u05ea\u05d4 \u05d3\u05dc\u05e7\u0...</td>
 </tr>
 </tbody>
 </table>
@@ -12063,8 +11886,8 @@ connecting 4 persons non smoking west wing
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># applying cleaning func to "name1" and "name2" cols and insert them into the DF</span>
-<span class="n">rooms_df</span><span class="p">[</span><span class="s2">"reserved"</span><span class="p">]</span> <span class="o">=</span> <span class="n">rooms_df</span><span class="p">[</span><span class="s2">"name1"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
-<span class="n">rooms_df</span><span class="p">[</span><span class="s2">"suggested"</span><span class="p">]</span> <span class="o">=</span> <span class="n">rooms_df</span><span class="p">[</span><span class="s2">"name2"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+<span class="n">rooms_df</span><span class="p">[</span><span class="s2">"reserved"</span><span class="p">]</span> <span class="o">=</span> <span class="n">rooms_df</span><span class="p">[</span><span class="s2">"name1"</span><span class="p">]</span><span class="o">.</span><span class="n">progress_apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+<span class="n">rooms_df</span><span class="p">[</span><span class="s2">"suggested"</span><span class="p">]</span> <span class="o">=</span> <span class="n">rooms_df</span><span class="p">[</span><span class="s2">"name2"</span><span class="p">]</span><span class="o">.</span><span class="n">progress_apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
 
 <span class="n">rooms_df</span>
 </pre></div>
@@ -12076,6 +11899,18 @@ connecting 4 persons non smoking west wing
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>  0%|          | 0/1000 [00:00&lt;?, ?it/s]</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>  0%|          | 0/1000 [00:00&lt;?, ?it/s]</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
@@ -13851,25 +13686,25 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['breakfast',
- 'beds',
- 'habitación',
- 'deluxe',
+<pre>['king',
  'suite',
- 'premium',
- 'bed',
  'superior',
- 'queen',
- 'king',
- 'double',
- 'view',
- 'smoking',
+ 'standard',
  'refundable',
- 'non',
+ 'beds',
  'twin',
+ 'double',
+ 'non',
+ 'smoking',
+ 'premium',
+ 'queen',
+ 'breakfast',
+ 'view',
+ 'habitación',
+ 'bed',
+ 'deluxe',
  'single',
- 'room',
- 'standard']</pre>
+ 'room']</pre>
 </div>
 </div>
 </div>
@@ -13896,26 +13731,26 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['breakfast',
- 'beds',
- 'habitación',
- 'deluxe',
+<pre>['king',
  'suite',
- 'premium',
- 'bed',
  'superior',
- 'queen',
- 'king',
+ 'standard',
+ 'refundable',
+ 'beds',
+ 'twin',
  'double',
+ 'non',
+ 'smoking',
+ 'premium',
+ 'queen',
+ 'breakfast',
  'classic',
  'view',
- 'smoking',
- 'refundable',
- 'non',
- 'twin',
+ 'habitación',
+ 'bed',
+ 'deluxe',
  'single',
- 'room',
- 'standard']</pre>
+ 'room']</pre>
 </div>
 </div>
 </div>
@@ -13976,25 +13811,25 @@ dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
-<th>double</th>
-<th>view</th>
-<th>smoking</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
 <th>refundable</th>
-<th>non</th>
+<th>beds</th>
 <th>twin</th>
+<th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
+<th>view</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -14025,10 +13860,7 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14039,11 +13871,18 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 </tr>
 <tr>
 <th>-1023</th>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14054,15 +13893,11 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>3</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-1008</th>
@@ -14083,8 +13918,8 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>-478</th>
@@ -14105,8 +13940,8 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>-200</th>
@@ -14155,6 +13990,16 @@ dtype: int64</pre>
 <tr>
 <th>995</th>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -14163,16 +14008,6 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>997</th>
@@ -14183,9 +14018,6 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -14193,36 +14025,42 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>999</th>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
+<td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 </tr>
 <tr>
 <th>1004</th>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14235,10 +14073,7 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>1963</th>
@@ -14248,6 +14083,9 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14258,9 +14096,6 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -14310,26 +14145,26 @@ dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
+<th>refundable</th>
+<th>beds</th>
+<th>twin</th>
 <th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
 <th>classic</th>
 <th>view</th>
-<th>smoking</th>
-<th>refundable</th>
-<th>non</th>
-<th>twin</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -14364,6 +14199,9 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14375,12 +14213,14 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-1023</th>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14391,16 +14231,11 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>3</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-1008</th>
@@ -14422,8 +14257,8 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>-478</th>
@@ -14433,6 +14268,9 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14444,9 +14282,6 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-200</th>
@@ -14457,9 +14292,6 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -14468,8 +14300,11 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>...</th>
@@ -14497,8 +14332,11 @@ dtype: int64</pre>
 <tr>
 <th>995</th>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14512,10 +14350,7 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>997</th>
@@ -14525,20 +14360,20 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>999</th>
@@ -14548,6 +14383,9 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14559,28 +14397,25 @@ dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 </tr>
 <tr>
 <th>1004</th>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -14589,25 +14424,25 @@ dtype: int64</pre>
 <tr>
 <th>1963</th>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -14790,25 +14625,25 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
-<th>double</th>
-<th>view</th>
-<th>smoking</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
 <th>refundable</th>
-<th>non</th>
+<th>beds</th>
 <th>twin</th>
+<th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
+<th>view</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -15124,26 +14959,26 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
+<th>refundable</th>
+<th>beds</th>
+<th>twin</th>
 <th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
 <th>classic</th>
 <th>view</th>
-<th>smoking</th>
-<th>refundable</th>
-<th>non</th>
-<th>twin</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -15553,25 +15388,25 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
-<th>double</th>
-<th>view</th>
-<th>smoking</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
 <th>refundable</th>
-<th>non</th>
+<th>beds</th>
 <th>twin</th>
+<th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
+<th>view</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -15599,25 +15434,25 @@ Name: double, Length: 69, dtype: int64</pre>
 <tbody>
 <tr>
 <th>-6</th>
-<td>35</td>
-<td>40</td>
-<td>25</td>
-<td>29</td>
+<td>50</td>
 <td>27</td>
-<td>18</td>
-<td>54</td>
 <td>41</td>
-<td>29</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
-<td>22</td>
+<td>32</td>
 <td>33</td>
-<td>52</td>
+<td>40</td>
 <td>53</td>
+<td>114</td>
+<td>52</td>
+<td>22</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 </tbody>
 </table>
@@ -15665,25 +15500,25 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
-<th>double</th>
-<th>view</th>
-<th>smoking</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
 <th>refundable</th>
-<th>non</th>
+<th>beds</th>
 <th>twin</th>
+<th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
+<th>view</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -15718,9 +15553,6 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
@@ -15728,8 +15560,11 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>9</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
 </tr>
 <tr>
 <th>-12</th>
@@ -15739,151 +15574,151 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>9</td>
 <td>11</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
 <td>0</td>
 <td>18</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-11</th>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>15</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>15</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>9</td>
-<td>8</td>
-<td>0</td>
 <td>23</td>
-<td>9</td>
 </tr>
 <tr>
 <th>-10</th>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>8</td>
-<td>0</td>
 <td>8</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>7</td>
 <td>14</td>
-<td>0</td>
+<td>7</td>
 <td>6</td>
 <td>0</td>
-<td>7</td>
-<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
 <td>0</td>
 <td>29</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-9</th>
+<td>15</td>
+<td>9</td>
+<td>0</td>
+<td>9</td>
 <td>0</td>
 <td>6</td>
-<td>0</td>
-<td>10</td>
-<td>9</td>
-<td>0</td>
-<td>8</td>
-<td>0</td>
-<td>0</td>
-<td>15</td>
+<td>12</td>
 <td>26</td>
-<td>14</td>
+<td>9</td>
 <td>7</td>
 <td>0</td>
-<td>9</td>
-<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>0</td>
+<td>8</td>
+<td>10</td>
 <td>0</td>
 <td>53</td>
-<td>9</td>
 </tr>
 <tr>
 <th>-8</th>
-<td>0</td>
-<td>11</td>
-<td>0</td>
 <td>22</td>
 <td>18</td>
 <td>7</td>
-<td>13</td>
+<td>0</td>
+<td>6</td>
+<td>11</td>
+<td>26</td>
+<td>31</td>
+<td>12</td>
+<td>8</td>
 <td>7</td>
 <td>0</td>
-<td>22</td>
-<td>31</td>
+<td>0</td>
 <td>13</td>
-<td>8</td>
-<td>6</td>
-<td>12</td>
-<td>26</td>
+<td>0</td>
+<td>13</td>
+<td>22</td>
 <td>0</td>
 <td>64</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-7</th>
-<td>0</td>
-<td>18</td>
-<td>6</td>
-<td>13</td>
-<td>19</td>
-<td>9</td>
-<td>42</td>
-<td>11</td>
-<td>13</td>
 <td>26</td>
-<td>68</td>
-<td>23</td>
-<td>7</td>
+<td>19</td>
 <td>11</td>
-<td>17</td>
+<td>19</td>
+<td>11</td>
+<td>18</td>
 <td>27</td>
+<td>68</td>
+<td>17</td>
+<td>7</td>
+<td>9</td>
+<td>13</td>
+<td>0</td>
+<td>23</td>
+<td>6</td>
+<td>42</td>
+<td>13</td>
 <td>10</td>
 <td>90</td>
-<td>19</td>
 </tr>
 <tr>
 <th>-6</th>
-<td>35</td>
-<td>40</td>
-<td>25</td>
-<td>29</td>
+<td>50</td>
 <td>27</td>
-<td>18</td>
-<td>54</td>
 <td>41</td>
-<td>29</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
-<td>22</td>
+<td>32</td>
 <td>33</td>
-<td>52</td>
+<td>40</td>
 <td>53</td>
+<td>114</td>
+<td>52</td>
+<td>22</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 </tbody>
 </table>
@@ -15943,26 +15778,26 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
+<th>refundable</th>
+<th>beds</th>
+<th>twin</th>
 <th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
 <th>classic</th>
 <th>view</th>
-<th>smoking</th>
-<th>refundable</th>
-<th>non</th>
-<th>twin</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -15991,26 +15826,26 @@ Name: double, Length: 69, dtype: int64</pre>
 <tbody>
 <tr>
 <th>-6</th>
-<td>47</td>
-<td>39</td>
-<td>17</td>
-<td>33</td>
-<td>32</td>
-<td>24</td>
-<td>79</td>
-<td>33</td>
-<td>32</td>
 <td>58</td>
+<td>32</td>
+<td>33</td>
+<td>31</td>
+<td>55</td>
+<td>39</td>
+<td>37</td>
 <td>114</td>
+<td>78</td>
+<td>23</td>
+<td>24</td>
+<td>32</td>
+<td>47</td>
 <td>15</td>
 <td>47</td>
-<td>23</td>
-<td>55</td>
-<td>78</td>
-<td>37</td>
+<td>17</td>
+<td>79</td>
+<td>33</td>
 <td>51</td>
 <td>208</td>
-<td>31</td>
 </tr>
 </tbody>
 </table>
@@ -16059,26 +15894,26 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
+<th>refundable</th>
+<th>beds</th>
+<th>twin</th>
 <th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
 <th>classic</th>
 <th>view</th>
-<th>smoking</th>
-<th>refundable</th>
-<th>non</th>
-<th>twin</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -16107,49 +15942,49 @@ Name: double, Length: 69, dtype: int64</pre>
 <tbody>
 <tr>
 <th>-7</th>
-<td>9</td>
-<td>21</td>
-<td>0</td>
 <td>17</td>
 <td>23</td>
-<td>0</td>
-<td>24</td>
 <td>11</td>
-<td>9</td>
-<td>17</td>
+<td>18</td>
+<td>11</td>
+<td>21</td>
+<td>34</td>
 <td>54</td>
+<td>19</td>
+<td>7</td>
+<td>0</td>
+<td>9</td>
+<td>9</td>
 <td>7</td>
 <td>20</td>
-<td>7</td>
-<td>11</td>
-<td>19</td>
-<td>34</td>
+<td>0</td>
+<td>24</td>
+<td>17</td>
 <td>6</td>
 <td>86</td>
-<td>18</td>
 </tr>
 <tr>
 <th>-6</th>
-<td>47</td>
-<td>39</td>
-<td>17</td>
-<td>33</td>
-<td>32</td>
-<td>24</td>
-<td>79</td>
-<td>33</td>
-<td>32</td>
 <td>58</td>
+<td>32</td>
+<td>33</td>
+<td>31</td>
+<td>55</td>
+<td>39</td>
+<td>37</td>
 <td>114</td>
+<td>78</td>
+<td>23</td>
+<td>24</td>
+<td>32</td>
+<td>47</td>
 <td>15</td>
 <td>47</td>
-<td>23</td>
-<td>55</td>
-<td>78</td>
-<td>37</td>
+<td>17</td>
+<td>79</td>
+<td>33</td>
 <td>51</td>
 <td>208</td>
-<td>31</td>
 </tr>
 </tbody>
 </table>
@@ -16198,26 +16033,26 @@ Name: double, Length: 69, dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>breakfast</th>
-<th>beds</th>
-<th>habitación</th>
-<th>deluxe</th>
-<th>suite</th>
-<th>premium</th>
-<th>bed</th>
-<th>superior</th>
-<th>queen</th>
 <th>king</th>
+<th>suite</th>
+<th>superior</th>
+<th>standard</th>
+<th>refundable</th>
+<th>beds</th>
+<th>twin</th>
 <th>double</th>
+<th>non</th>
+<th>smoking</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
 <th>classic</th>
 <th>view</th>
-<th>smoking</th>
-<th>refundable</th>
-<th>non</th>
-<th>twin</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -16252,181 +16087,181 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>7</td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>11</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-12</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>6</td>
-<td>10</td>
 <td>0</td>
-<td>6</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>7</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>16</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-11</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>6</td>
 <td>6</td>
 <td>0</td>
-<td>7</td>
+<td>9</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
+<td>8</td>
 <td>11</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
 <td>0</td>
 <td>22</td>
-<td>9</td>
 </tr>
 <tr>
 <th>-10</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
+<td>11</td>
 <td>7</td>
 <td>0</td>
-<td>11</td>
 <td>0</td>
 <td>0</td>
-<td>11</td>
+<td>0</td>
+<td>8</td>
 <td>10</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+<td>6</td>
 <td>0</td>
 <td>31</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-9</th>
+<td>8</td>
+<td>8</td>
+<td>0</td>
+<td>12</td>
 <td>0</td>
 <td>6</td>
-<td>0</td>
-<td>7</td>
-<td>8</td>
-<td>0</td>
-<td>13</td>
-<td>0</td>
-<td>7</td>
-<td>8</td>
+<td>14</td>
 <td>27</td>
-<td>0</td>
 <td>10</td>
 <td>9</td>
 <td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
 <td>10</td>
-<td>14</td>
+<td>0</td>
+<td>13</td>
+<td>7</td>
 <td>0</td>
 <td>48</td>
-<td>12</td>
 </tr>
 <tr>
 <th>-8</th>
-<td>0</td>
-<td>0</td>
-<td>7</td>
-<td>12</td>
-<td>29</td>
-<td>0</td>
 <td>18</td>
+<td>29</td>
+<td>6</td>
+<td>11</td>
 <td>6</td>
 <td>0</td>
-<td>18</td>
+<td>24</td>
 <td>40</td>
+<td>14</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>16</td>
 <td>7</td>
-<td>6</td>
-<td>14</td>
-<td>24</td>
+<td>18</td>
+<td>12</td>
 <td>6</td>
 <td>59</td>
-<td>11</td>
 </tr>
 <tr>
 <th>-7</th>
-<td>9</td>
-<td>21</td>
-<td>0</td>
 <td>17</td>
 <td>23</td>
-<td>0</td>
-<td>24</td>
 <td>11</td>
-<td>9</td>
-<td>17</td>
+<td>18</td>
+<td>11</td>
+<td>21</td>
+<td>34</td>
 <td>54</td>
+<td>19</td>
+<td>7</td>
+<td>0</td>
+<td>9</td>
+<td>9</td>
 <td>7</td>
 <td>20</td>
-<td>7</td>
-<td>11</td>
-<td>19</td>
-<td>34</td>
+<td>0</td>
+<td>24</td>
+<td>17</td>
 <td>6</td>
 <td>86</td>
-<td>18</td>
 </tr>
 <tr>
 <th>-6</th>
-<td>47</td>
-<td>39</td>
-<td>17</td>
-<td>33</td>
-<td>32</td>
-<td>24</td>
-<td>79</td>
-<td>33</td>
-<td>32</td>
 <td>58</td>
+<td>32</td>
+<td>33</td>
+<td>31</td>
+<td>55</td>
+<td>39</td>
+<td>37</td>
 <td>114</td>
+<td>78</td>
+<td>23</td>
+<td>24</td>
+<td>32</td>
+<td>47</td>
 <td>15</td>
 <td>47</td>
-<td>23</td>
-<td>55</td>
-<td>78</td>
-<td>37</td>
+<td>17</td>
+<td>79</td>
+<td>33</td>
 <td>51</td>
 <td>208</td>
-<td>31</td>
 </tr>
 </tbody>
 </table>
@@ -16487,26 +16322,26 @@ Name: double, Length: 69, dtype: int64</pre>
 <tr style="text-align: right;">
 <th></th>
 <th>room</th>
-<th>view</th>
-<th>non</th>
 <th>twin</th>
+<th>non</th>
+<th>view</th>
 <th>room</th>
 <th>room</th>
 <th>room</th>
 <th>double</th>
 <th>room</th>
-<th>bed</th>
+<th>twin</th>
 <th>...</th>
-<th>king</th>
-<th>double</th>
-<th>view</th>
 <th>smoking</th>
-<th>refundable</th>
-<th>non</th>
-<th>twin</th>
+<th>premium</th>
+<th>queen</th>
+<th>breakfast</th>
+<th>view</th>
+<th>habitación</th>
+<th>bed</th>
+<th>deluxe</th>
 <th>single</th>
 <th>room</th>
-<th>standard</th>
 </tr>
 <tr>
 <th>score</th>
@@ -16555,8 +16390,8 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
 <td>7</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-16</th>
@@ -16569,18 +16404,18 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>12</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
+<td>6</td>
 <td>...</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-16</th>
@@ -16593,18 +16428,18 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>12</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
+<td>6</td>
 <td>...</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-16</th>
@@ -16617,18 +16452,18 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>12</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
+<td>6</td>
 <td>...</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
 </tr>
 <tr>
 <th>-16</th>
@@ -16641,18 +16476,18 @@ Name: double, Length: 69, dtype: int64</pre>
 <td>12</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
+<td>6</td>
 <td>...</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>6</td>
-<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>12</td>
-<td>0</td>
 </tr>
 <tr>
 <th>...</th>
@@ -16681,122 +16516,122 @@ Name: double, Length: 69, dtype: int64</pre>
 <tr>
 <th>-6</th>
 <td>198</td>
-<td>50</td>
-<td>52</td>
 <td>53</td>
+<td>52</td>
+<td>50</td>
 <td>198</td>
 <td>198</td>
 <td>198</td>
 <td>114</td>
 <td>198</td>
-<td>54</td>
+<td>53</td>
 <td>...</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
 <td>22</td>
-<td>33</td>
-<td>52</td>
-<td>53</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 <tr>
 <th>-6</th>
 <td>198</td>
-<td>50</td>
-<td>52</td>
 <td>53</td>
+<td>52</td>
+<td>50</td>
 <td>198</td>
 <td>198</td>
 <td>198</td>
 <td>114</td>
 <td>198</td>
-<td>54</td>
+<td>53</td>
 <td>...</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
 <td>22</td>
-<td>33</td>
-<td>52</td>
-<td>53</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 <tr>
 <th>-6</th>
 <td>198</td>
-<td>50</td>
-<td>52</td>
 <td>53</td>
+<td>52</td>
+<td>50</td>
 <td>198</td>
 <td>198</td>
 <td>198</td>
 <td>114</td>
 <td>198</td>
-<td>54</td>
+<td>53</td>
 <td>...</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
 <td>22</td>
-<td>33</td>
-<td>52</td>
-<td>53</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 <tr>
 <th>-6</th>
 <td>198</td>
-<td>50</td>
-<td>52</td>
 <td>53</td>
+<td>52</td>
+<td>50</td>
 <td>198</td>
 <td>198</td>
 <td>198</td>
 <td>114</td>
 <td>198</td>
-<td>54</td>
+<td>53</td>
 <td>...</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
 <td>22</td>
-<td>33</td>
-<td>52</td>
-<td>53</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 <tr>
 <th>-6</th>
 <td>198</td>
-<td>50</td>
-<td>52</td>
 <td>53</td>
+<td>52</td>
+<td>50</td>
 <td>198</td>
 <td>198</td>
 <td>198</td>
 <td>114</td>
 <td>198</td>
-<td>54</td>
+<td>53</td>
 <td>...</td>
-<td>50</td>
-<td>114</td>
-<td>50</td>
 <td>22</td>
-<td>33</td>
-<td>52</td>
-<td>53</td>
+<td>18</td>
+<td>29</td>
+<td>35</td>
+<td>50</td>
+<td>25</td>
+<td>54</td>
+<td>29</td>
 <td>36</td>
 <td>198</td>
-<td>32</td>
 </tr>
 </tbody>
 </table>
